@@ -346,3 +346,117 @@ a:hover{ text-decoration: underline; }
   .nav-links a{ margin-left: 0; margin-right: 12px; }
 }
 
+/* Contact cards */
+.contact-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.contact-card{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 14px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(17,24,42,.85);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+
+  /* animation */
+  transform: translateY(6px);
+  opacity: 0;
+  animation: riseIn .45s ease forwards;
+}
+
+.contact-card:nth-child(2){ animation-delay: .05s; }
+.contact-card:nth-child(3){ animation-delay: .10s; }
+.contact-card:nth-child(4){ animation-delay: .15s; }
+
+.contact-card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background: radial-gradient(500px 200px at 20% 0%, rgba(120,170,255,.20), transparent 55%),
+              radial-gradient(500px 200px at 80% 0%, rgba(170,120,255,.14), transparent 55%);
+  opacity: 0;
+  transition: opacity .2s ease;
+  pointer-events:none;
+}
+
+.contact-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(120,170,255,.25);
+  box-shadow: 0 16px 45px rgba(0,0,0,.35);
+  text-decoration: none;
+}
+
+.contact-card:hover::before{ opacity: 1; }
+
+.contact-icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(232,238,252,.12);
+  background: rgba(232,238,252,.06);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.contact-icon svg{
+  width: 22px;
+  height: 22px;
+  color: var(--text);
+}
+
+.contact-text{
+  min-width: 0;
+}
+
+.contact-label{
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+
+.contact-value{
+  font-size: 14px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-arrow{
+  margin-left: auto;
+  color: rgba(232,238,252,.7);
+  font-size: 14px;
+}
+
+@keyframes riseIn{
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce){
+  .contact-card{
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .contact-card:hover{
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 800px){
+  .contact-grid{ grid-template-columns: 1fr; }
+}
+
+
