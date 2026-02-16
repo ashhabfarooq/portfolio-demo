@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ashhab Farooq — Portfolio</title>
-  <meta name="description" content="Ashhab Farooq — 1st-year Applied Science student aiming toward Computer Engineering. Projects in CAD and Arduino." />
+  <meta name="description" content="Ashhab Farooq — 1st-year Applied Science student planning to move into Computer Engineering. Projects in CAD and Arduino/Python." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -22,15 +22,31 @@
       </nav>
 
       <div class="hero" id="top">
-        <h1>Ashhab Farooq</h1>
-        <p class="tagline">
-          1st-year Applied Science student • Planning to move into Computer Engineering • Building in CAD + Arduino/Python
-        </p>
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1>Ashhab Farooq</h1>
+            <p class="tagline">
+              1st-year Applied Science student • Planning to move into Computer Engineering • Building in CAD + Arduino/Python
+            </p>
 
-        <div class="buttons">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
-          <a class="btn" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
+            <div class="buttons">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+              <a class="btn" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
+              <!-- Add LinkedIn later if you want:
+              <a class="btn" href="https://www.linkedin.com/in/YOURPROFILE" target="_blank" rel="noopener">LinkedIn</a>
+              -->
+            </div>
+
+            <p class="hero-note">
+              Demo site — I’ll keep polishing this with more projects, screenshots, and a final resume.
+            </p>
+          </div>
+
+          <div class="hero-photo-wrap">
+            <!-- Put your image at: images/profile.jpg -->
+            <img class="hero-photo" src="images/profile.jpg" alt="Photo of Ashhab Farooq" />
+          </div>
         </div>
       </div>
     </div>
@@ -41,10 +57,9 @@
       <div class="container">
         <h2>About</h2>
         <p>
-          I’m a first-year Applied Science student working toward Computer Engineering. I enjoy building hands-on projects
-          that combine design and problem-solving—especially CAD modeling and beginner embedded/sensor work. I’m currently
-          developing my skills in SolidWorks, Python, and Arduino, and I’m focused on improving how I document and present
-          my work clearly.
+          I’m a first-year Applied Science student working toward Computer Engineering. I enjoy hands-on projects that
+          combine design and problem-solving—especially CAD modeling and beginner embedded/sensor work. I’m currently
+          developing my skills in SolidWorks, Python, and Arduino, and I focus on documenting and presenting my work clearly.
         </p>
       </div>
     </section>
@@ -79,41 +94,80 @@
 
     <section class="section" id="projects">
       <div class="container">
-        <h2>Projects</h2>
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="section-sub">
+            Click any image to zoom.
+          </p>
+        </div>
 
         <div class="project-grid">
+          <!-- PROJECT 1 -->
           <article class="card project">
             <div class="project-top">
               <h3>Harley-Davidson WLA (1942) — SolidWorks Model</h3>
               <span class="pill">CAD</span>
             </div>
+
             <p>
               A CAD project focused on modeling key parts and assemblies of a 1942 Harley-Davidson WLA. Emphasis on clean
               part organization, realistic constraints, and manufacturable geometry.
             </p>
+
+            <!-- Images -->
+            <div class="img-grid">
+              <!-- Put images at: images/harley-1.png, etc. -->
+              <button class="img-btn" type="button">
+                <img src="images/harley-1.png" alt="Harley WLA model view 1" loading="lazy" />
+              </button>
+              <button class="img-btn" type="button">
+                <img src="images/harley-2.png" alt="Harley WLA model view 2" loading="lazy" />
+              </button>
+              <button class="img-btn" type="button">
+                <img src="images/harley-3.png" alt="Harley WLA model view 3" loading="lazy" />
+              </button>
+            </div>
+
             <ul class="bullets">
               <li><strong>Tools:</strong> SolidWorks</li>
               <li><strong>Focus:</strong> assemblies, mates, parametric dimensions</li>
             </ul>
+
             <div class="links">
+              <!-- If you have a specific repo later, replace the link with it -->
               <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
             </div>
           </article>
 
+          <!-- PROJECT 2 -->
           <article class="card project">
             <div class="project-top">
               <h3>LDR Smoothing + LED Control — Arduino / Python</h3>
               <span class="pill">Embedded</span>
             </div>
+
             <p>
               Built a small sensor pipeline that reads LDR light values, applies a moving-average smoothing filter to
               reduce noise, and maps the result to LED brightness (PWM). Tuned sampling rate and thresholds to match
               real-world lighting changes.
             </p>
+
+            <!-- Images -->
+            <div class="img-grid">
+              <!-- Put images at: images/arduino-1.png, etc. -->
+              <button class="img-btn" type="button">
+                <img src="images/arduino-1.png" alt="Arduino project setup view 1" loading="lazy" />
+              </button>
+              <button class="img-btn" type="button">
+                <img src="images/arduino-2.png" alt="Arduino project setup view 2" loading="lazy" />
+              </button>
+            </div>
+
             <ul class="bullets">
               <li><strong>Tools:</strong> Arduino, Python</li>
               <li><strong>Focus:</strong> filtering, sampling time, thresholding</li>
             </ul>
+
             <div class="links">
               <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
             </div>
@@ -121,7 +175,7 @@
         </div>
 
         <p class="note">
-          This is a demo version. I’ll add screenshots, project links, and a finalized resume PDF next.
+          Tip: screenshots + 2–3 clear bullets per project is exactly what recruiters want.
         </p>
       </div>
     </section>
@@ -145,8 +199,60 @@
     </div>
   </footer>
 
+  <!-- Image Modal -->
+  <div class="modal" id="imgModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button class="modal-close" type="button" aria-label="Close image" data-close="true">×</button>
+      <img id="modalImg" src="" alt="" />
+      <p id="modalCaption" class="modal-caption"></p>
+    </div>
+  </div>
+
   <script>
+    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Image modal logic
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const modalCaption = document.getElementById("modalCaption");
+
+    function openModal(src, alt) {
+      modalImg.src = src;
+      modalImg.alt = alt || "Project image";
+      modalCaption.textContent = alt || "";
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("no-scroll");
+    }
+
+    function closeModal() {
+      modal.setAttribute("aria-hidden", "true");
+      modalImg.src = "";
+      modalCaption.textContent = "";
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Click any project image to open modal
+    document.querySelectorAll(".img-btn img").forEach(img => {
+      img.addEventListener("click", (e) => {
+        openModal(img.getAttribute("src"), img.getAttribute("alt"));
+      });
+    });
+
+    // Close modal on backdrop/close button
+    modal.addEventListener("click", (e) => {
+      if (e.target && e.target.dataset && e.target.dataset.close === "true") {
+        closeModal();
+      }
+    });
+
+    // Close modal with ESC
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.getAttribute("aria-hidden") === "false") {
+        closeModal();
+      }
+    });
   </script>
 </body>
 </html>
