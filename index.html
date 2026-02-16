@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashhab Farooq — Portfolio</title>
+  <meta name="description" content="Ashhab Farooq — 1st-year Applied Science student aiming toward Computer Engineering. Projects in CAD and Arduino." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="logo" href="#top">Ashhab Farooq</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero" id="top">
+        <h1>Ashhab Farooq</h1>
+        <p class="tagline">
+          1st-year Applied Science student • Planning to move into Computer Engineering • Building in CAD + Arduino/Python
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+          <a class="btn" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I’m a first-year Applied Science student working toward Computer Engineering. I enjoy building hands-on projects
+          that combine design and problem-solving—especially CAD modeling and beginner embedded/sensor work. I’m currently
+          developing my skills in SolidWorks, Python, and Arduino, and I’m focused on improving how I document and present
+          my work clearly.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Technical</h3>
+            <ul>
+              <li>SolidWorks (parts, assemblies, basic drawings)</li>
+              <li>Arduino + sensors (intro projects)</li>
+              <li>Python (basics, scripting, data handling)</li>
+              <li>Engineering fundamentals (math/physics/chem)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Strengths</h3>
+            <ul>
+              <li>Structured, step-by-step problem solving</li>
+              <li>Detail-focused modeling and iteration</li>
+              <li>Clear documentation and organization</li>
+              <li>Learning fast and improving through feedback</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+          <article class="card project">
+            <div class="project-top">
+              <h3>Harley-Davidson WLA (1942) — SolidWorks Model</h3>
+              <span class="pill">CAD</span>
+            </div>
+            <p>
+              A CAD project focused on modeling key parts and assemblies of a 1942 Harley-Davidson WLA. Emphasis on clean
+              part organization, realistic constraints, and manufacturable geometry.
+            </p>
+            <ul class="bullets">
+              <li><strong>Tools:</strong> SolidWorks</li>
+              <li><strong>Focus:</strong> assemblies, mates, parametric dimensions</li>
+            </ul>
+            <div class="links">
+              <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>LDR Smoothing + LED Control — Arduino / Python</h3>
+              <span class="pill">Embedded</span>
+            </div>
+            <p>
+              Built a small sensor pipeline that reads LDR light values, applies a moving-average smoothing filter to
+              reduce noise, and maps the result to LED brightness (PWM). Tuned sampling rate and thresholds to match
+              real-world lighting changes.
+            </p>
+            <ul class="bullets">
+              <li><strong>Tools:</strong> Arduino, Python</li>
+              <li><strong>Focus:</strong> filtering, sampling time, thresholding</li>
+            </ul>
+            <div class="links">
+              <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="note">
+          This is a demo version. I’ll add screenshots, project links, and a finalized resume PDF next.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>
+            Email: <a href="mailto:ashhab@example.com">ashhab@example.com</a><br/>
+            GitHub: <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">github.com/ashhabfarooq</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ashhab Farooq</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
