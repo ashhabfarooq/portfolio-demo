@@ -535,6 +535,8 @@ a:hover{ text-decoration: underline; }
   .img-btn img{ height: 140px; }
 }
 
+/* ----- Additions ----- */
+
 /* Minor text helper */
 .muted{
   color: var(--muted);
