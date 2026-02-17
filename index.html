@@ -4,67 +4,115 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ashhab Farooq — Portfolio</title>
-  <meta name="description" content="Ashhab Farooq — 1st-year Applied Science student planning to move into Computer Engineering. Projects in CAD and Arduino/Python." />
+  <meta name="description" content="Ashhab Farooq — 1st-year Applied Science student at UBC Okanagan, pursuing Computer Engineering." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <a class="logo" href="#top">Ashhab Farooq</a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+  <!-- Sticky Top Bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="#top">Ashhab Farooq</a>
 
-      <div class="hero" id="top">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container">
         <div class="hero-grid">
           <div class="hero-text">
             <h1>Ashhab Farooq</h1>
-            <p class="tagline">
-              1st-year Applied Science student at UBC Okanagan • Planning to pursue Computer Engineering
-            </p>
-          
+            <p class="tagline">1st-year Applied Science student at UBC Okanagan • Pursuing Computer Engineering</p>
 
             <div class="buttons">
               <a class="btn primary" href="#projects">View Projects</a>
-              <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+              <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
               <a class="btn" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
-              <!-- Add LinkedIn later:
+              <!-- Add later if you want:
               <a class="btn" href="https://www.linkedin.com/in/YOURPROFILE" target="_blank" rel="noopener">LinkedIn</a>
               -->
             </div>
 
-            <p class="hero-note">
-              Demo Site
-            </p>
+            <p class="hero-note">Demo site — I’ll keep polishing this with more projects, screenshots, and a finalized resume.</p>
           </div>
 
           <div class="hero-photo-wrap">
-            <!-- Put your image at: images/profile.jpg -->
+            <!-- Put your image here: images/profile.jpg (or .png, just match the extension) -->
             <img class="hero-photo" src="images/profile.jpg" alt="Photo of Ashhab Farooq" />
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <main>
+    <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container">
         <h2>About</h2>
         <p>
-          I’m a first-year Applied Science student at UBCO working towards Computer Engineering. I enjoy hands-on projects that
-          combine design and problem-solving—especially CAD modeling and beginner embedded/sensor work. I’m currently
-          developing my skills in SolidWorks, Python, and Arduino, and I focus on documenting and presenting my work clearly.
+          I’m a first-year Applied Science student working toward Computer Engineering. I enjoy projects that combine
+          design and problem-solving—especially CAD modeling and beginner embedded systems work. I’m developing my skills
+          in SolidWorks, Python, Arduino, Java, and C++, and I focus on documenting my work clearly and improving through iteration.
         </p>
       </div>
     </section>
 
+    <!-- EDUCATION / ACADEMIC BACKGROUND -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head">
+          <h2>Academic Background</h2>
+          <p class="section-sub">Current program + relevant coursework (we can expand this later).</p>
+        </div>
+
+        <div class="edu-wrap">
+          <div class="edu-card">
+            <div class="edu-left">
+              <div class="edu-title">BASc — Applied Science (1st Year)</div>
+              <div class="edu-school">University of British Columbia Okanagan (UBCO)</div>
+              <div class="edu-meta">
+                <span class="pill subtle">Kelowna, BC</span>
+                <span class="pill subtle">2025 — Present</span>
+                <span class="pill">Target: Computer Engineering</span>
+              </div>
+            </div>
+
+            <div class="edu-right">
+              <div class="edu-stat">
+                <div class="edu-stat-label">Focus</div>
+                <div class="edu-stat-value">Design • Programming • Engineering Fundamentals</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="h3-inline">Relevant Coursework</h3>
+            <div class="chips">
+              <span class="chip">APSC 177 — Python / Programming</span>
+              <span class="chip">APSC 173 — Calculus</span>
+              <span class="chip">APSC 183 — Engineering Chemistry</span>
+              <span class="chip">Engineering Design</span>
+              <span class="chip">Physics / Mechanics (in progress)</span>
+              <!-- Add/remove as you like -->
+            </div>
+
+            <p class="note" style="margin-top:12px;">
+              Tip: keep this to 5–10 items max. We can add “Key Topics” later if needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
     <section class="section" id="skills">
       <div class="container">
         <h2>Skills</h2>
@@ -95,31 +143,34 @@
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section-head">
           <h2>Projects</h2>
-          <p class="section-sub">
-            
-          </p>
+          <p class="section-sub">Search projects, then click an image to zoom.</p>
         </div>
 
-        <div class="project-grid">
+        <!-- Search bar -->
+        <div class="project-search">
+          <input id="projectSearch" class="search-input" type="search" placeholder="Search projects (e.g., SolidWorks, Arduino, CAD…)" autocomplete="off" />
+          <div class="search-hint" id="searchHint">Showing all projects</div>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
           <!-- PROJECT 1 -->
-          <article class="card project">
+          <article class="card project" data-tags="cad solidworks harley wla modeling assemblies">
             <div class="project-top">
               <h3>Harley-Davidson WLA (1942) — SolidWorks Model</h3>
               <span class="pill">CAD</span>
             </div>
 
             <p>
-              A CAD project focused on modeling key parts and assemblies of a 1942 Harley-Davidson WLA. Emphasis on clean
+              A CAD project focused on modeling key parts and assemblies of a 1942 Harley-Davidson WLA. Emphasis on
               part organization, realistic constraints, and manufacturable geometry.
             </p>
 
-            <!-- Images -->
             <div class="img-grid">
-              <!-- Put images at: images/harley-1.png, etc. -->
               <button class="img-btn" type="button">
                 <img src="images/harley-1.png" alt="Harley WLA model view 1" loading="lazy" />
               </button>
@@ -137,27 +188,23 @@
             </ul>
 
             <div class="links">
-              <!-- If you have a specific repo later, replace the link with it -->
               <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
             </div>
           </article>
 
           <!-- PROJECT 2 -->
-          <article class="card project">
+          <article class="card project" data-tags="arduino python embedded sensors ldr smoothing pwm">
             <div class="project-top">
               <h3>LDR Smoothing + LED Control — Arduino / Python</h3>
               <span class="pill">Embedded</span>
             </div>
 
             <p>
-              Built a small sensor pipeline that reads LDR light values, applies a moving-average smoothing filter to
-              reduce noise, and maps the result to LED brightness (PWM). Tuned sampling rate and thresholds to match
-              real-world lighting changes.
+              Built a small sensor pipeline that reads LDR light values, applies a moving-average filter to reduce noise,
+              and maps the result to LED brightness (PWM). Tuned sampling and thresholds for real-world lighting changes.
             </p>
 
-            <!-- Images -->
             <div class="img-grid">
-              <!-- Put images at: images/arduino-1.png, etc. -->
               <button class="img-btn" type="button">
                 <img src="images/arduino-1.png" alt="Arduino project setup view 1" loading="lazy" />
               </button>
@@ -175,97 +222,121 @@
               <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
             </div>
           </article>
+
+          <!-- PROJECT 3 (NEW) -->
+          <article class="card project" data-tags="design project engineering teamwork prototyping">
+            <div class="project-top">
+              <h3>Design Project — (Coming Soon)</h3>
+              <span class="pill">Design</span>
+            </div>
+
+            <p>
+              Placeholder for an upcoming design-focused project. I’ll add the description, images, and outcomes once it’s ready.
+            </p>
+
+            <div class="placeholder-box">
+              <div class="placeholder-title">Space reserved for:</div>
+              <ul class="placeholder-list">
+                <li>Project overview + goals</li>
+                <li>Design process (iterations)</li>
+                <li>Photos / screenshots</li>
+                <li>Results + what I learned</li>
+              </ul>
+            </div>
+
+            <ul class="bullets">
+              <li><strong>Tools:</strong> TBD</li>
+              <li><strong>Focus:</strong> teamwork, design iteration, documentation</li>
+            </ul>
+
+            <div class="links">
+              <a href="#" onclick="return false;">Repo (later)</a>
+            </div>
+          </article>
         </div>
 
         <p class="note">
-          
+          Tip: 2–3 strong bullets + screenshots is exactly what recruiters want.
         </p>
       </div>
     </section>
 
-<section class="section" id="contact">
-  <div class="container">
-    <h2>Contact</h2>
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
 
-    <div class="contact-grid">
-      <!-- EMAIL -->
-      <a class="contact-card" href="mailto:ashhabfarooq@gmail.com">
-        <div class="contact-icon" aria-hidden="true">
-          <!-- Mail icon -->
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.8" />
-            <path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="contact-text">
-          <div class="contact-label">Email</div>
-          <div class="contact-value">ashhabfarooq@gmail.com</div>
-        </div>
-        <div class="contact-arrow" aria-hidden="true">↗</div>
-      </a>
+        <div class="contact-grid">
+          <!-- EMAIL -->
+          <a class="contact-card" href="mailto:ashhab@example.com">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.8" />
+                <path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">ashhab@example.com</div>
+            </div>
+            <div class="contact-arrow" aria-hidden="true">↗</div>
+          </a>
 
-      <!-- PHONE -->
-      <a class="contact-card" href="tel:+1XXXXXXXXXX">
-        <div class="contact-icon" aria-hidden="true">
-          <!-- Phone icon -->
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M7 3.8h3l1.2 4-2 1.2c1.1 2.4 3 4.3 5.4 5.4l1.2-2 4 1.2v3c0 .9-.7 1.7-1.6 1.8-8 .6-14.4-5.8-13.8-13.8.1-.9.9-1.6 1.8-1.6Z"
-              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="contact-text">
-          <div class="contact-label">Phone</div>
-          <div class="contact-value">+1 (XXX) XXX-XXXX</div>
-        </div>
-        <div class="contact-arrow" aria-hidden="true">↗</div>
-      </a>
+          <!-- PHONE -->
+          <a class="contact-card" href="tel:+16041234567">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 3.8h3l1.2 4-2 1.2c1.1 2.4 3 4.3 5.4 5.4l1.2-2 4 1.2v3c0 .9-.7 1.6-1.6 1.6-9.2 0-16.6-7.4-16.6-16.6 0-.9.7-1.6 1.6-1.6Z"
+                      stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+1 (604) 123-4567</div>
+            </div>
+            <div class="contact-arrow" aria-hidden="true">↗</div>
+          </a>
 
-      <!-- GITHUB -->
-      <a class="contact-card" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">
-        <div class="contact-icon" aria-hidden="true">
-          <!-- GitHub icon -->
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M12 2.75c-5.1 0-9.25 4.14-9.25 9.25 0 4.09 2.67 7.56 6.37 8.78.47.09.65-.2.65-.46v-1.63c-2.6.57-3.15-1.1-3.15-1.1-.42-1.08-1.03-1.37-1.03-1.37-.84-.58.07-.57.07-.57.93.07 1.42.96 1.42.96.82 1.42 2.16 1.01 2.69.77.08-.6.32-1.01.58-1.24-2.08-.24-4.27-1.04-4.27-4.62 0-1.02.36-1.85.96-2.5-.1-.24-.42-1.18.09-2.46 0 0 .78-.25 2.55.95.74-.21 1.54-.31 2.33-.31.79 0 1.59.11 2.33.31 1.77-1.2 2.55-.95 2.55-.95.51 1.28.19 2.22.09 2.46.6.65.96 1.48.96 2.5 0 3.6-2.2 4.38-4.29 4.61.33.29.63.87.63 1.75v2.6c0 .26.18.56.66.46A9.26 9.26 0 0 0 21.25 12c0-5.11-4.14-9.25-9.25-9.25Z"
-              fill="currentColor" opacity="0.92"/>
-          </svg>
-        </div>
-        <div class="contact-text">
-          <div class="contact-label">GitHub</div>
-          <div class="contact-value">github.com/ashhabfarooq</div>
-        </div>
-        <div class="contact-arrow" aria-hidden="true">↗</div>
-      </a>
+          <!-- GITHUB -->
+          <a class="contact-card" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.69-3.79-1.34-3.79-1.34-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.64-.73 2.04-1.06.1-.73.39-1.24.71-1.52-2.5-.28-5.14-1.25-5.14-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.1 1.16.9-.25 1.87-.38 2.84-.39.97 0 1.94.13 2.84.39 2.15-1.46 3.1-1.16 3.1-1.16.61 1.54.23 2.68.11 2.96.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.2.64.78.54A11.2 11.2 0 0 0 12 .8Z"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/ashhabfarooq</div>
+            </div>
+            <div class="contact-arrow" aria-hidden="true">↗</div>
+          </a>
 
-      <!-- LINKEDIN (optional - keep placeholder or remove) -->
-      <a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-        <div class="contact-icon" aria-hidden="true">
-          <!-- LinkedIn icon -->
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M6.5 9.5H3.75V20.25H6.5V9.5Z" fill="currentColor" opacity="0.92"/>
-            <path d="M5.13 3.75a1.63 1.63 0 1 0 0 3.25 1.63 1.63 0 0 0 0-3.25Z" fill="currentColor" opacity="0.92"/>
-            <path d="M20.25 20.25h-2.74v-5.3c0-1.26-.02-2.88-1.75-2.88-1.75 0-2.02 1.37-2.02 2.79v5.39H11V9.5h2.63v1.47h.04c.37-.7 1.28-1.44 2.64-1.44 2.82 0 3.34 1.86 3.34 4.29v6.43Z"
-              fill="currentColor" opacity="0.92"/>
-          </svg>
+          <!-- LINKEDIN (optional placeholder) -->
+          <a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.5 23.5h4V7.98h-4V23.5ZM8 7.98h3.83v2.12h.05c.53-1 1.82-2.12 3.75-2.12 4 0 4.74 2.63 4.74 6.05v9.47h-4v-8.4c0-2-.04-4.58-2.79-4.58-2.79 0-3.22 2.18-3.22 4.43v8.55H8V7.98Z"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">Add your profile</div>
+            </div>
+            <div class="contact-arrow" aria-hidden="true">↗</div>
+          </a>
         </div>
-        <div class="contact-text">
-          <div class="contact-label">LinkedIn</div>
-          <div class="contact-value">Add your profile</div>
-        </div>
-        <div class="contact-arrow" aria-hidden="true">↗</div>
-      </a>
-    </div>
 
-    <p class="note">
-     
-    </p>
-  </div>
-</section>
+        <p class="note">Tip: if you don’t want your phone public, keep it only on your resume.</p>
+      </div>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Ashhab Farooq</p>
-    </div>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Ashhab Farooq</p>
+      </div>
+    </footer>
+  </main>
 
   <!-- Image Modal -->
   <div class="modal" id="imgModal" aria-hidden="true">
@@ -301,32 +372,44 @@
       document.body.classList.remove("no-scroll");
     }
 
-    // Click any project image to open modal
     document.querySelectorAll(".img-btn img").forEach(img => {
-      img.addEventListener("click", (e) => {
-        openModal(img.getAttribute("src"), img.getAttribute("alt"));
-      });
+      img.addEventListener("click", () => openModal(img.getAttribute("src"), img.getAttribute("alt")));
     });
 
-    // Close modal on backdrop/close button
     modal.addEventListener("click", (e) => {
-      if (e.target && e.target.dataset && e.target.dataset.close === "true") {
-        closeModal();
-      }
+      if (e.target && e.target.dataset && e.target.dataset.close === "true") closeModal();
     });
 
-    // Close modal with ESC
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && modal.getAttribute("aria-hidden") === "false") {
-        closeModal();
-      }
+      if (e.key === "Escape" && modal.getAttribute("aria-hidden") === "false") closeModal();
     });
+
+    // Projects search filter
+    const searchInput = document.getElementById("projectSearch");
+    const projectCards = Array.from(document.querySelectorAll("#projectGrid .project"));
+    const hint = document.getElementById("searchHint");
+
+    function normalize(s) {
+      return (s || "").toLowerCase().trim();
+    }
+
+    function filterProjects() {
+      const q = normalize(searchInput.value);
+      let shown = 0;
+
+      projectCards.forEach(card => {
+        const text = normalize(card.innerText);
+        const tags = normalize(card.getAttribute("data-tags"));
+        const match = !q || text.includes(q) || tags.includes(q);
+        card.style.display = match ? "" : "none";
+        if (match) shown++;
+      });
+
+      hint.textContent = q ? `Showing ${shown} project(s) for "${q}"` : "Showing all projects";
+    }
+
+    searchInput.addEventListener("input", filterProjects);
+    filterProjects();
   </script>
 </body>
 </html>
-
-
-
-
-
-
