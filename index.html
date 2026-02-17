@@ -66,38 +66,49 @@
     </section>
 
     <!-- EDUCATION / ACADEMIC BACKGROUND -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="section-head">
-          <h2>Academic Background</h2>
-          <p class="section-sub"></p>
+<section class="section" id="education">
+  <div class="container">
+    <h2>Academic Background</h2>
+
+    <!-- Main Academic Background Card (with left accent bar) -->
+    <div class="edu-shell">
+      <div class="edu-card2">
+        <div class="edu-card2-main">
+          <div class="edu-card2-title">
+            BASc — Applied Science (1st Year)
+          </div>
+
+          <div class="edu-card2-sub">
+            <span class="edu-ico" aria-hidden="true">🎓</span>
+            University of British Columbia Okanagan (UBCO)
+          </div>
         </div>
 
-        <div class="edu-wrap">
-  <div class="edu-card">
-    <div class="edu-left">
-      <div class="edu-title">BASc — Applied Science (1st Year)</div>
-      <div class="edu-school">University of British Columbia Okanagan (UBCO)</div>
-      <div class="edu-meta">
-        <span class="pill subtle">Kelowna, BC</span>
-        <span class="pill subtle">2025 — Present</span>
-        <span class="pill">Target: Computer Engineering</span>
+        <div class="edu-card2-meta">
+          <div class="edu-meta-row">
+            <span class="edu-ico" aria-hidden="true">📅</span>
+            <span>2025 — Present</span>
+          </div>
+          <div class="edu-meta-row">
+            <span class="edu-ico" aria-hidden="true">📍</span>
+            <span>Kelowna, BC</span>
+          </div>
+          <div class="edu-meta-row">
+            <span class="edu-ico" aria-hidden="true">⭐</span>
+            <span>Target: Computer Engineering</span>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="edu-right">
-      <div class="edu-stat">
-        <div class="edu-stat-label">Focus</div>
-        <div class="edu-stat-value">Design • Programming • Engineering Fundamentals</div>
+      <div class="edu-divider"></div>
+
+      <!-- Relevant Coursework (chips like screenshot) -->
+      <div class="edu-subhead">
+        <span class="edu-ico" aria-hidden="true">📘</span>
+        <h3>Relevant Coursework</h3>
       </div>
-    </div>
-  </div>
 
-  <div class="grid-2">
-    <!-- Relevant Coursework -->
-    <div class="card">
-      <h3 class="h3-inline">Relevant Coursework</h3>
-      <div class="chips">
+      <div class="chips edu-chips">
         <span class="chip">Python / Programming</span>
         <span class="chip">Calculus I & II</span>
         <span class="chip">Engineering Chemistry</span>
@@ -107,43 +118,46 @@
       </div>
     </div>
 
-    <!-- Scholarships -->
-    <div class="card">
-      <h3 class="h3-inline">Scholarships</h3>
-      <ul class="clean-list">
-        <li><strong>—</strong> (Add scholarship name here)</li>
-        <li><strong>—</strong> (Add scholarship name here)</li>
-      </ul>
-      <p class="mini-note">We can format this like “Awarded for …” later.</p>
-    </div>
+    <!-- Academic Achievements -->
+    <h2 style="margin-top: 34px;">Academic Achievements</h2>
 
-    <!-- Test Scores -->
-    <div class="card">
-      <h3 class="h3-inline">Test Scores</h3>
-      <div class="score-row">
-        <div class="score-title">IELTS</div>
-        <div class="score-pill">Overall: 7.5</div>
+    <div class="ach-grid">
+      <!-- Scholarships (only) -->
+      <div class="ach-card">
+        <div class="ach-head">
+          <div class="ach-badge badge-blue" aria-hidden="true">🎓</div>
+          <h3>Scholarships</h3>
+        </div>
+        <div class="ach-rule"></div>
+
+        <ul class="ach-list">
+          <li><strong>(Scholarship Name #1)</strong><br><span class="muted">Short note (optional)</span></li>
+          <li style="margin-top:10px;"><strong>(Scholarship Name #2)</strong><br><span class="muted">Short note (optional)</span></li>
+        </ul>
       </div>
 
-      <div class="score-grid">
-        <div class="score-item"><span>Listening</span><strong>8.0</strong></div>
-        <div class="score-item"><span>Reading</span><strong>8.0</strong></div>
-        <div class="score-item"><span>Speaking</span><strong>6.5</strong></div>
-        <div class="score-item"><span>Writing</span><strong>6.5</strong></div>
-      </div>
+      <!-- IELTS Test Score (only) -->
+      <div class="ach-card">
+        <div class="ach-head">
+          <div class="ach-badge badge-green" aria-hidden="true">⭐</div>
+          <h3>Test Scores</h3>
+        </div>
+        <div class="ach-rule"></div>
 
-      <p class="mini-note">Update these anytime — this layout will stay clean.</p>
-    </div>
-  </div>
-</div>
+        <div class="ach-block">
+          <div class="ach-row">
+            <strong>IELTS: 8.0/strong>
+            <span class="pill subtle">Overall</span>
+          </div>
 
-            <p class="note" style="margin-top:12px;">
-              
-            </p>
+          <div class="ach-mini muted" style="margin-top:8px;">
+            Listening: 8.5, Reading: 8.5, Speaking: 8.0, Writing: 7.5
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- SKILLS -->
     <section class="section" id="skills">
@@ -460,5 +474,6 @@
   </script>
 </body>
 </html>
+
 
 
