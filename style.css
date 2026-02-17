@@ -534,3 +534,117 @@ a:hover{ text-decoration: underline; }
   .contact-grid{ grid-template-columns: 1fr; }
   .img-btn img{ height: 140px; }
 }
+
+/* Minor text helper */
+.muted{
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Education extras */
+.clean-list{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.mini-note{
+  margin-top: 10px;
+  color: rgba(184,194,221,.9);
+  font-size: 13px;
+}
+
+/* IELTS score UI */
+.score-row{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.score-title{
+  font-weight: 700;
+}
+.score-pill{
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(232,238,252,.12);
+  background: rgba(232,238,252,.06);
+  color: rgba(232,238,252,.9);
+}
+.score-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.score-item{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(232,238,252,.10);
+  background: rgba(232,238,252,.04);
+  color: rgba(232,238,252,.92);
+}
+.score-item span{
+  color: var(--muted);
+}
+
+/* Projects UI polish */
+.project-search{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+  flex-wrap: wrap;
+}
+.search-input{
+  flex: 1 1 320px;
+}
+.search-hint{
+  display:inline-flex;
+  align-items:center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(232,238,252,.12);
+  background: rgba(232,238,252,.06);
+  color: rgba(232,238,252,.85);
+}
+
+/* Nicer project title alignment */
+.project-top h3{
+  margin: 0;
+  line-height: 1.25;
+}
+
+/* Slightly more breathing room for project images */
+.img-grid{
+  margin-top: 14px;
+}
+
+/* Interests (1–2 word tiles) */
+.interest-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.interest-pill{
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(232,238,252,.12);
+  background: rgba(232,238,252,.06);
+  color: rgba(232,238,252,.92);
+  font-weight: 600;
+  letter-spacing: .2px;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+
+.interest-pill:hover{
+  transform: translateY(-2px);
+  background: rgba(232,238,252,.10);
+  border-color: rgba(120,170,255,.25);
+}
