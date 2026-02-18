@@ -843,3 +843,13 @@ a:hover{ text-decoration: underline; }
   border-color: rgba(170,120,255,.22);
   box-shadow: 0 12px 30px rgba(0,0,0,.35);
 }
+
+.contact-card.static{
+  cursor: default;
+}
+
+.contact-card.static:hover{
+  transform: none;
+  box-shadow: none;
+  border-color: var(--line);
+}
