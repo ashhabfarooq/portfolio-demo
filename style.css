@@ -101,22 +101,6 @@ h1, h2, h3 {
 
 .logo:hover { text-decoration: none; }
 
-.logo-avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid var(--hdrLine);
-  flex-shrink: 0;
-  background: var(--hdrBg);
-}
-
-.logo-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
 .logo-info {
   display: flex;
