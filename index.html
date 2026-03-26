@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ashhab Farooq — Portfolio</title>
   <meta name="description" content="Ashhab Farooq — 1st-year Applied Science student at UBC Okanagan, pursuing Computer Engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -12,7 +15,17 @@
   <!-- Sticky Top Bar -->
   <header class="topbar">
     <div class="container topbar-inner">
-      <a class="logo" href="#top">Ashhab Farooq</a>
+
+      <!-- Logo: shows hero snapshot -->
+      <a class="logo" href="#top">
+        <div class="logo-avatar">
+          <img src="images/profile.jpg" alt="Ashhab Farooq" />
+        </div>
+        <div class="logo-info">
+          <span class="logo-name">Ashhab Farooq</span>
+          <span class="logo-sub">Computer Engineering · UBCO</span>
+        </div>
+      </a>
 
       <nav class="nav-links" aria-label="Primary">
         <a href="#about">About</a>
@@ -21,6 +34,22 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <!-- Icon-only action links -->
+      <div class="topbar-icons">
+        <!-- GitHub -->
+        <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener" aria-label="GitHub" class="icon-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.69-3.79-1.34-3.79-1.34-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.64-.73 2.04-1.06.1-.73.39-1.24.71-1.52-2.5-.28-5.14-1.25-5.14-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.1 1.16.9-.25 1.87-.38 2.84-.39.97 0 1.94.13 2.84.39 2.15-1.46 3.1-1.16 3.1-1.16.61 1.54.23 2.68.11 2.96.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.2.64.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/ashhabfarooq" target="_blank" rel="noopener" aria-label="LinkedIn" class="icon-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <!-- Resume -->
+        <a href="resume.pdf" target="_blank" rel="noopener" aria-label="Download Resume" class="icon-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -31,22 +60,18 @@
         <div class="hero-grid">
           <div class="hero-text">
             <h1>Ashhab Farooq</h1>
-            <p class="tagline">1st-year Applied Science student at UBC Okanagan • Pursuing Computer Engineering</p>
+            <p class="tagline">1st-year Applied Science student at UBC Okanagan · Pursuing Computer Engineering</p>
 
             <div class="buttons">
               <a class="btn primary" href="#projects">View Projects</a>
               <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
               <a class="btn" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
-              <!-- Add later if you want:
-              <a class="btn" href="https://www.linkedin.com/in/YOURPROFILE" target="_blank" rel="noopener">LinkedIn</a>
-              -->
             </div>
 
             <p class="hero-note">Demo site</p>
           </div>
 
           <div class="hero-photo-wrap">
-            <!-- Put your image here: images/profile.jpg (or .png, just match the extension) -->
             <img class="hero-photo" src="images/profile.jpg" alt="Photo of Ashhab Farooq" />
           </div>
         </div>
@@ -58,139 +83,133 @@
       <div class="container">
         <h2>About</h2>
         <p>
-          I’m a first-year Applied Science student working toward Computer Engineering. I enjoy projects that combine
-          design and problem-solving—especially CAD modeling and beginner embedded systems work. I’m developing my skills
+          I'm a first-year Applied Science student working toward Computer Engineering. I enjoy projects that combine
+          design and problem-solving—especially CAD modeling and beginner embedded systems work. I'm developing my skills
           in SolidWorks, Python, Arduino, Java, and C++, and I focus on documenting my work clearly and improving through iteration.
         </p>
       </div>
     </section>
 
     <section class="section" id="education">
-  <div class="container">
-    <h2>Academic Background</h2>
+      <div class="container">
+        <h2>Academic Background</h2>
 
-    <div class="edu-shell">
-      <div class="edu-card2">
-        <div class="edu-card2-main">
-          <div class="edu-card2-title">BASc — Applied Science (1st Year)</div>
-          <div class="edu-card2-sub">University of British Columbia Okanagan (UBCO)</div>
-        </div>
+        <div class="edu-shell">
+          <div class="edu-card2">
+            <div class="edu-card2-main">
+              <div class="edu-card2-title">BASc — Applied Science (1st Year)</div>
+              <div class="edu-card2-sub">University of British Columbia Okanagan (UBCO)</div>
+            </div>
 
-        <div class="edu-card2-meta">
-          <div class="edu-meta-row"><span>2025 — 2029</span></div>
-          <div class="edu-meta-row"><span>Kelowna, BC</span></div>
-          <div class="edu-meta-row"><span>Target: Computer Engineering</span></div>
-        </div>
-      </div>
-
-      <div class="edu-divider"></div>
-
-      <div class="edu-subhead">
-        <h3>Relevant Coursework</h3>
-      </div>
-
-      <div class="chips edu-chips">
-        <span class="chip">Python / Programming</span>
-        <span class="chip">Calculus I & II</span>
-        <span class="chip">Engineering Chemistry</span>
-        <span class="chip">Engineering Design</span>
-        <span class="chip">Linear Algebra</span>
-        <span class="chip">Statics</span>
-        <span class="chip">Dynamics</span>
-        <span class="chip">Sustainable Design</span>
-      </div>
-    </div>
-
-    <h2 style="margin-top: 34px;">Academic Achievements</h2>
-
-    <div class="ach-grid">
-      <div class="ach-card">
-        <div class="ach-head">
-          <h3>Scholarships</h3>
-        </div>
-        <div class="ach-rule"></div>
-
-        <ul class="ach-list">
-          <li><strong>International Major Entrance Scholarship (IMES)</strong><br><span class="muted">Renewable merit-based scholarship awarded for academic excellence</span></li>
-          <li style="margin-top:10px;"><strong>Outstanding International Student (OIS)</strong><br><span class="muted">Merit-based scholarship awarded for exceptional academic standing</span></li>
-        </ul>
-      </div>
-
-      <div class="ach-card">
-        <div class="ach-head">
-          <h3>Test Scores</h3>
-        </div>
-        <div class="ach-rule"></div>
-
-        <div class="ach-block">
-          <div class="ach-row">
-            <strong>IELTS: 8.0</strong>
-            <span class="pill subtle">Overall</span>
+            <div class="edu-card2-meta">
+              <div class="edu-meta-row"><span>2025 — 2029</span></div>
+              <div class="edu-meta-row"><span>Kelowna, BC</span></div>
+              <div class="edu-meta-row"><span>Target: Computer Engineering</span></div>
+            </div>
           </div>
 
-          <div class="ach-mini muted" style="margin-top:8px;">
-            Listening: 8.5, Reading: 8.5, Speaking: 8.0, Writing: 7.5
+          <div class="edu-divider"></div>
+
+          <div class="edu-subhead">
+            <h3>Relevant Coursework</h3>
+          </div>
+
+          <div class="chips edu-chips">
+            <span class="chip">Python / Programming</span>
+            <span class="chip">Calculus I & II</span>
+            <span class="chip">Engineering Chemistry</span>
+            <span class="chip">Engineering Design</span>
+            <span class="chip">Linear Algebra</span>
+            <span class="chip">Statics</span>
+            <span class="chip">Dynamics</span>
+            <span class="chip">Sustainable Design</span>
+          </div>
+        </div>
+
+        <h2 style="margin-top: 34px;">Academic Achievements</h2>
+
+        <div class="ach-grid">
+          <div class="ach-card">
+            <div class="ach-head">
+              <h3>Scholarships</h3>
+            </div>
+            <div class="ach-rule"></div>
+
+            <ul class="ach-list">
+              <li><strong>International Major Entrance Scholarship (IMES)</strong><br><span class="muted">Renewable merit-based scholarship awarded for academic excellence</span></li>
+              <li style="margin-top:10px;"><strong>Outstanding International Student (OIS)</strong><br><span class="muted">Merit-based scholarship awarded for exceptional academic standing</span></li>
+            </ul>
+          </div>
+
+          <div class="ach-card">
+            <div class="ach-head">
+              <h3>Test Scores</h3>
+            </div>
+            <div class="ach-rule"></div>
+
+            <div class="ach-block">
+              <div class="ach-row">
+                <strong>IELTS: 8.0</strong>
+                <span class="pill subtle">Overall</span>
+              </div>
+
+              <div class="ach-mini muted" style="margin-top:8px;">
+                Listening: 8.5, Reading: 8.5, Speaking: 8.0, Writing: 7.5
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-    <!-- SKILLS + INTERESTS (COMBINED) -->
-<section class="section" id="skills">
-  <div class="container">
-    <h2>Skills & Interests</h2>
+    <!-- SKILLS + INTERESTS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2>Skills & Interests</h2>
 
-    <div class="grid-2">
-      <!-- Technical -->
-      <div class="card pills-card">
-        <h3>Technical</h3>
+        <div class="grid-2">
+          <div class="card pills-card">
+            <h3>Technical</h3>
+            <div class="pill-wrap">
+              <span class="pillchip">SolidWorks</span>
+              <span class="pillchip">Arduino</span>
+              <span class="pillchip">Python</span>
+              <span class="pillchip">Java</span>
+              <span class="pillchip">C++</span>
+              <span class="pillchip">Git</span>
+              <span class="pillchip">Engineering Fundamentals</span>
+            </div>
+          </div>
 
-        <div class="pill-wrap">
-          <span class="pillchip">SolidWorks</span>
-          <span class="pillchip">Arduino</span>
-          <span class="pillchip">Python</span>
-          <span class="pillchip">Java</span>
-          <span class="pillchip">C++</span>
-          <span class="pillchip">Git</span>
-          <span class="pillchip">Engineering Fundamentals</span>
+          <div class="card pills-card">
+            <h3>Soft Skills</h3>
+            <div class="pill-wrap">
+              <span class="pillchip">Problem Solving</span>
+              <span class="pillchip">Communication</span>
+              <span class="pillchip">Teamwork</span>
+              <span class="pillchip">Attention to Detail</span>
+              <span class="pillchip">Workflow Organization</span>
+              <span class="pillchip">Fast Learner</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="height:14px;"></div>
+
+        <div class="card pills-card">
+          <h3>Interests</h3>
+          <div class="pill-wrap">
+            <span class="pillchip">Gaming</span>
+            <span class="pillchip">Cricket</span>
+            <span class="pillchip">Music</span>
+            <span class="pillchip">PC Building</span>
+            <span class="pillchip">Tech Teardown</span>
+            <span class="pillchip">AI Exploration</span>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Strengths -->
-      <div class="card pills-card">
-        <h3>Soft Skills</h3>
-
-        <div class="pill-wrap">
-          <span class="pillchip">Problem Solving</span>
-          <span class="pillchip">Communication</span>
-          <span class="pillchip">Teamwork</span>
-          <span class="pillchip">Attention to Detail</span>
-          <span class="pillchip">Workflow Organization</span>
-          <span class="pillchip">Fast Learner</span>
-        </div>
-      </div>
-    </div>
-
-    <div style="height:14px;"></div>
-
-    <!-- Interests in same style -->
-    <div class="card pills-card">
-      <h3>Interests</h3>
-
-      <div class="pill-wrap">
-        <span class="pillchip">Gaming</span>
-        <span class="pillchip">Cricket</span>
-        <span class="pillchip">Music</span>
-        <span class="pillchip">PC Building</span>
-        <span class="pillchip">Tech Teardown</span>
-        <span class="pillchip">AI Exploration</span>
-      </div>
-    </div>
-  </div>
-</section>
-    
     <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="container">
@@ -199,112 +218,63 @@
           <p class="section-sub">Search projects, then click an image to zoom.</p>
         </div>
 
-        <!-- Search bar -->
         <div class="project-search">
           <input id="projectSearch" class="search-input" type="search" placeholder="Search projects (e.g., SolidWorks, Arduino, CAD…)" autocomplete="off" />
           <div class="search-hint" id="searchHint">Showing all projects</div>
         </div>
 
         <div class="project-grid" id="projectGrid">
-          <!-- PROJECT 1 -->
           <article class="card project" data-tags="cad solidworks harley wla modeling assemblies">
             <div class="project-top">
               <h3>Harley-Davidson WLA (1942) — SolidWorks Model</h3>
               <span class="pill">CAD</span>
             </div>
-
-            <p>
-              A CAD project focused on modeling key parts and assemblies of a 1942 Harley-Davidson WLA. Emphasis on
-              part organization, realistic constraints, and manufacturable geometry.
-            </p>
-
+            <p>A CAD project focused on modeling key parts and assemblies of a 1942 Harley-Davidson WLA. Emphasis on part organization, realistic constraints, and manufacturable geometry.</p>
             <div class="img-grid">
-              <button class="img-btn" type="button">
-                <img src="images/harley-1.png" alt="Harley WLA model view 1" loading="lazy" />
-              </button>
-              <button class="img-btn" type="button">
-                <img src="images/harley-2.png" alt="Harley WLA model view 2" loading="lazy" />
-              </button>
-              <button class="img-btn" type="button">
-                <img src="images/harley-3.png" alt="Harley WLA model view 3" loading="lazy" />
-              </button>
+              <button class="img-btn" type="button"><img src="images/harley-1.png" alt="Harley WLA model view 1" loading="lazy" /></button>
+              <button class="img-btn" type="button"><img src="images/harley-2.png" alt="Harley WLA model view 2" loading="lazy" /></button>
+              <button class="img-btn" type="button"><img src="images/harley-3.png" alt="Harley WLA model view 3" loading="lazy" /></button>
             </div>
-
             <ul class="bullets">
               <li><strong>Tools:</strong> SolidWorks</li>
               <li><strong>Focus:</strong> assemblies, mates, parametric dimensions</li>
             </ul>
-
-            <div class="links">
-              <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
-            </div>
+            <div class="links"><a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a></div>
           </article>
 
-          <!-- PROJECT 2 -->
           <article class="card project" data-tags="arduino python embedded sensors ldr smoothing pwm">
             <div class="project-top">
               <h3>LDR Smoothing + LED Control — Arduino / Python</h3>
               <span class="pill">Embedded</span>
             </div>
-
-            <p>
-              Built a small sensor pipeline that reads LDR light values, applies a moving-average filter to reduce noise,
-              and maps the result to LED brightness (PWM). Tuned sampling and thresholds for real-world lighting changes.
-            </p>
-
+            <p>Built a small sensor pipeline that reads LDR light values, applies a moving-average filter to reduce noise, and maps the result to LED brightness (PWM). Tuned sampling and thresholds for real-world lighting changes.</p>
             <div class="img-grid">
-              <button class="img-btn" type="button">
-                <img src="images/arduino-1.png" alt="Arduino project setup view 1" loading="lazy" />
-              </button>
-              <button class="img-btn" type="button">
-                <img src="images/arduino-2.png" alt="Arduino project setup view 2" loading="lazy" />
-              </button>
+              <button class="img-btn" type="button"><img src="images/arduino-1.png" alt="Arduino project setup view 1" loading="lazy" /></button>
+              <button class="img-btn" type="button"><img src="images/arduino-2.png" alt="Arduino project setup view 2" loading="lazy" /></button>
             </div>
-
             <ul class="bullets">
               <li><strong>Tools:</strong> Arduino, Python</li>
               <li><strong>Focus:</strong> filtering, sampling time, thresholding</li>
             </ul>
-
-            <div class="links">
-              <a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a>
-            </div>
+            <div class="links"><a href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">GitHub</a></div>
           </article>
 
-          <!-- PROJECT 3 -->
-<article class="card project" data-tags="design sustainability systems modeling ferrofluid microplastics lca">
-
-  <div class="project-top">
-    <h3>Ferrofluid-Based Microplastic Removal System — Sustainable Engineering Design</h3>
-    <span class="pill">Design</span>
-  </div>
-
-  <p>
-    A team-based engineering design project focused on developing a scalable ferrofluid-assisted separation system 
-    to remove microplastics from freshwater bodies. Emphasis on systems modeling, sustainability evaluation, 
-    and large-scale implementation feasibility.
-  </p>
-
-  <!-- Add images later -->
-  <div class="img-grid">
-    <!-- Insert project images here later -->
-  </div>
-
-  <ul class="bullets">
-    <li><strong>Tools:</strong> Systems Modeling, Life Cycle Analysis (LCA), Decision Matrix</li>
-    <li><strong>Focus:</strong> sustainability assessment, systems thinking, scalable implementation</li>
-  </ul>
-
-  <div class="links">
-    <a href="#" onclick="return false;">GitHub (coming soon)</a>
-  </div>
-
-</article>
+          <article class="card project" data-tags="design sustainability systems modeling ferrofluid microplastics lca">
+            <div class="project-top">
+              <h3>Ferrofluid-Based Microplastic Removal System — Sustainable Engineering Design</h3>
+              <span class="pill">Design</span>
+            </div>
+            <p>A team-based engineering design project focused on developing a scalable ferrofluid-assisted separation system to remove microplastics from freshwater bodies. Emphasis on systems modeling, sustainability evaluation, and large-scale implementation feasibility.</p>
+            <div class="img-grid"></div>
+            <ul class="bullets">
+              <li><strong>Tools:</strong> Systems Modeling, Life Cycle Analysis (LCA), Decision Matrix</li>
+              <li><strong>Focus:</strong> sustainability assessment, systems thinking, scalable implementation</li>
+            </ul>
+            <div class="links"><a href="#" onclick="return false;">GitHub (coming soon)</a></div>
+          </article>
         </div>
 
-        <p class="note">
-          
-        </p>
+        <p class="note"></p>
       </div>
     </section>
 
@@ -314,13 +284,9 @@
         <h2>Contact</h2>
 
         <div class="contact-grid">
-          <!-- EMAIL -->
           <a class="contact-card" href="mailto:ashhabfarooq@gmail.com">
             <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.8" />
-                <path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-              </svg>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.8" /><path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
             </div>
             <div class="contact-text">
               <div class="contact-label">Email</div>
@@ -329,13 +295,9 @@
             <div class="contact-arrow" aria-hidden="true">↗</div>
           </a>
 
-          <!-- PHONE -->
           <a class="contact-card" href="tel:+1XXXXXXXXXX">
             <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M7 3.8h3l1.2 4-2 1.2c1.1 2.4 3 4.3 5.4 5.4l1.2-2 4 1.2v3c0 .9-.7 1.6-1.6 1.6-9.2 0-16.6-7.4-16.6-16.6 0-.9.7-1.6 1.6-1.6Z"
-                      stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 3.8h3l1.2 4-2 1.2c1.1 2.4 3 4.3 5.4 5.4l1.2-2 4 1.2v3c0 .9-.7 1.6-1.6 1.6-9.2 0-16.6-7.4-16.6-16.6 0-.9.7-1.6 1.6-1.6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
             </div>
             <div class="contact-text">
               <div class="contact-label">Phone</div>
@@ -344,12 +306,9 @@
             <div class="contact-arrow" aria-hidden="true">↗</div>
           </a>
 
-          <!-- GITHUB -->
           <a class="contact-card" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">
             <div class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.69-3.79-1.34-3.79-1.34-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.64-.73 2.04-1.06.1-.73.39-1.24.71-1.52-2.5-.28-5.14-1.25-5.14-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.1 1.16.9-.25 1.87-.38 2.84-.39.97 0 1.94.13 2.84.39 2.15-1.46 3.1-1.16 3.1-1.16.61 1.54.23 2.68.11 2.96.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.2.64.78.54A11.2 11.2 0 0 0 12 .8Z"/>
-              </svg>
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.69-3.79-1.34-3.79-1.34-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.64-.73 2.04-1.06.1-.73.39-1.24.71-1.52-2.5-.28-5.14-1.25-5.14-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.1 1.16.9-.25 1.87-.38 2.84-.39.97 0 1.94.13 2.84.39 2.15-1.46 3.1-1.16 3.1-1.16.61 1.54.23 2.68.11 2.96.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.2.64.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
             </div>
             <div class="contact-text">
               <div class="contact-label">GitHub</div>
@@ -358,26 +317,15 @@
             <div class="contact-arrow" aria-hidden="true">↗</div>
           </a>
 
-          <!-- LOCATION -->
-<div class="contact-card static">
-  <div class="contact-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none">
-      <path d="M12 21s-6-5.4-6-10a6 6 0 1 1 12 0c0 4.6-6 10-6 10Z"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round"/>
-      <circle cx="12" cy="11" r="2.5"
-              stroke="currentColor"
-              stroke-width="1.8"/>
-    </svg>
-  </div>
-
-  <div class="contact-text">
-    <div class="contact-label">Location</div>
-    <div class="contact-value">Kelowna, BC, Canada</div>
-  </div>
-</div>
+          <div class="contact-card static">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-6-5.4-6-10a6 6 0 1 1 12 0c0 4.6-6 10-6 10Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <div class="contact-text">
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Kelowna, BC, Canada</div>
+            </div>
+          </div>
         </div>
 
         <p class="note"></p>
@@ -403,10 +351,8 @@
   </div>
 
   <script>
-    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Image modal logic
     const modal = document.getElementById("imgModal");
     const modalImg = document.getElementById("modalImg");
     const modalCaption = document.getElementById("modalCaption");
@@ -438,19 +384,15 @@
       if (e.key === "Escape" && modal.getAttribute("aria-hidden") === "false") closeModal();
     });
 
-    // Projects search filter
     const searchInput = document.getElementById("projectSearch");
     const projectCards = Array.from(document.querySelectorAll("#projectGrid .project"));
     const hint = document.getElementById("searchHint");
 
-    function normalize(s) {
-      return (s || "").toLowerCase().trim();
-    }
+    function normalize(s) { return (s || "").toLowerCase().trim(); }
 
     function filterProjects() {
       const q = normalize(searchInput.value);
       let shown = 0;
-
       projectCards.forEach(card => {
         const text = normalize(card.innerText);
         const tags = normalize(card.getAttribute("data-tags"));
@@ -458,7 +400,6 @@
         card.style.display = match ? "" : "none";
         if (match) shown++;
       });
-
       hint.textContent = q ? `Showing ${shown} project(s) for "${q}"` : "Showing all projects";
     }
 
@@ -467,15 +408,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
