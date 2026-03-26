@@ -273,7 +273,6 @@ h1, h2, h3 {
   border-radius: 16px;
   box-shadow: var(--shadowSoft);
   padding: 24px 24px 26px;
-  overflow: hidden;
   backdrop-filter: blur(8px);
 }
 .edu-shell::before {
@@ -284,6 +283,7 @@ h1, h2, h3 {
   background: var(--accentSolid);
   border-radius: 4px 0 0 4px;
   opacity: .70;
+  z-index: 1;
 }
 .edu-shell::after {
   content: "";
