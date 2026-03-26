@@ -229,8 +229,16 @@ h1, h2, h3 {
   padding: 7px 11px;
   border-radius: 999px;
   border: 1px solid rgba(26,24,20,.09);
-  background: rgba(26,24,20,.04);
+  background: rgba(255,255,255,.70);
   color: rgba(26,24,20,.78);
+  transition: transform .15s, background .15s, border-color .15s, box-shadow .15s;
+  cursor: default;
+}
+.chip:hover {
+  transform: translateY(-2px);
+  background: rgba(100,140,200,.12);
+  border-color: rgba(100,140,200,.28);
+  box-shadow: 0 6px 18px rgba(80,100,160,.10);
 }
 
 /* ── Skills ────────────────────────────────────────────── */
