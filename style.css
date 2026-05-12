@@ -107,6 +107,13 @@ h1, h2, h3 {
 }
 .nav-links a:hover { color: var(--hdrText); text-decoration: none; }
 
+.nav-links a.nav-active {
+  color: var(--hdrText);
+  background: rgba(245, 244, 241, 0.10);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
 .topbar-actions { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
 
 .hdr-btn {
