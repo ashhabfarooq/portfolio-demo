@@ -11,14 +11,12 @@
 <!-- ── TOPBAR ─────────────────────────────────────────── -->
 <header class="topbar">
   <div class="container topbar-inner">
-
     <a class="logo" href="#top">
       <div class="logo-info">
         <span class="logo-name">Ashhab Farooq</span>
         <span class="logo-sub">Computer Engineering · UBCO</span>
       </div>
     </a>
-
     <nav class="nav-links" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#education">Education</a>
@@ -27,7 +25,6 @@
       <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
     </nav>
-
   </div>
 </header>
 
@@ -35,14 +32,12 @@
 <section class="section hero">
   <div class="container">
     <div class="hero-grid">
-
       <div class="hero-text">
         <h1>Ashhab Farooq</h1>
         <p class="tagline">
           Computer Engineering student at UBCO. I build things that sit at the intersection
           of hardware and software — CAD models, embedded systems, and engineering design.
         </p>
-
         <div class="buttons">
           <a class="hero-icon-btn" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.69-3.79-1.34-3.79-1.34-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.64-.73 2.04-1.06.1-.73.39-1.24.71-1.52-2.5-.28-5.14-1.25-5.14-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.1 1.16.9-.25 1.87-.38 2.84-.39.97 0 1.94.13 2.84.39 2.15-1.46 3.1-1.16 3.1-1.16.61 1.54.23 2.68.11 2.96.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.2.64.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
@@ -54,14 +49,11 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
           </a>
         </div>
-
         <p class="hero-note">Demo site</p>
       </div>
-
       <div class="hero-photo-wrap">
         <img class="hero-photo" src="images/profile.jpg" alt="Photo of Ashhab Farooq" />
       </div>
-
     </div>
   </div>
 </section>
@@ -82,7 +74,6 @@
 <section class="section" id="education">
   <div class="container">
     <h2>Academic Background</h2>
-
     <div class="edu-shell">
       <div class="edu-card2">
         <div class="edu-card2-main">
@@ -95,13 +86,8 @@
           <div class="edu-meta-row"><span>Target: Computer Engineering</span></div>
         </div>
       </div>
-
       <div class="edu-divider"></div>
-
-      <div class="edu-subhead">
-        <h3>Relevant Coursework</h3>
-      </div>
-
+      <div class="edu-subhead"><h3>Relevant Coursework</h3></div>
       <div class="chips edu-chips">
         <span class="chip">Python / Programming</span>
         <span class="chip">Calculus I &amp; II</span>
@@ -115,7 +101,6 @@
     </div>
 
     <h2 style="margin-top: 34px;">Academic Achievements</h2>
-
     <div class="ach-grid">
       <div class="ach-card">
         <div class="ach-head"><h3>Scholarships</h3></div>
@@ -131,7 +116,6 @@
           </li>
         </ul>
       </div>
-
       <div class="ach-card">
         <div class="ach-head"><h3>Test Scores</h3></div>
         <div class="ach-rule"></div>
@@ -146,7 +130,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -155,7 +138,7 @@
   <div class="container">
     <div class="section-head">
       <h2>Projects</h2>
-      <p class="section-sub">Search projects, then click an image to zoom.</p>
+      <p class="section-sub">Click "View details" to expand any project.</p>
     </div>
 
     <div class="project-search">
@@ -163,82 +146,127 @@
       <div class="search-hint" id="searchHint">Showing all projects</div>
     </div>
 
-    <div class="project-grid" id="projectGrid">
+    <div class="project-list" id="projectGrid">
 
       <!-- Harley -->
-      <article class="card project" data-tags="cad solidworks harley wla modeling assemblies">
-        <div class="project-top">
-          <h3>Harley-Davidson WLA (1942) — SolidWorks Model</h3>
-          <span class="pill">CAD</span>
+      <article class="pcard" data-tags="cad solidworks harley wla modeling assemblies"
+        data-title="Harley-Davidson WLA (1942) — SolidWorks Model"
+        data-category="CAD"
+        data-date="2024 — 2025"
+        data-summary="A CAD project focused on modeling key parts and assemblies of a 1942 Harley-Davidson WLA. Emphasis on part organization, realistic constraints, and manufacturable geometry."
+        data-highlights='["Modeled full motorcycle subassemblies including engine block, frame, and drivetrain components","Applied realistic mates and parametric dimensions throughout the assembly tree","Organized part files and configurations following professional SolidWorks conventions"]'
+        data-tools='["SolidWorks","Parametric Modeling","Assembly Mates","Engineering Drawing"]'
+        data-images='["images/harley-1.png","images/harley-2.png"]'>
+        <div class="pcard-left">
+          <span class="pcard-date">2024 — 2025</span>
+          <span class="pcard-category">CAD</span>
         </div>
-        <p>A CAD project focused on modeling key parts and assemblies of a 1942 Harley-Davidson WLA. Emphasis on part organization, realistic constraints, and manufacturable geometry.</p>
-        <div class="img-grid">
-          <button class="img-btn" type="button"><img src="images/harley-1.png" alt="Harley WLA model view 1" loading="lazy" /></button>
-          <button class="img-btn" type="button"><img src="images/harley-2.png" alt="Harley WLA model view 2" loading="lazy" /></button>
+        <div class="pcard-body">
+          <h3 class="pcard-title">Harley-Davidson WLA (1942) — SolidWorks Model</h3>
+          <p class="pcard-summary">A CAD project modeling key parts and assemblies of a 1942 Harley-Davidson WLA. Emphasis on part organization, realistic constraints, and manufacturable geometry.</p>
+          <div class="pcard-tags">
+            <span class="ptag">SolidWorks</span>
+            <span class="ptag">CAD</span>
+            <span class="ptag">Assemblies</span>
+          </div>
+          <button class="pcard-btn" type="button">View details <span class="pcard-arrow">——</span></button>
         </div>
-        <ul class="bullets">
-          <li><strong>Tools:</strong> SolidWorks</li>
-          <li><strong>Focus:</strong> assemblies, mates, parametric dimensions</li>
-        </ul>
       </article>
 
       <!-- Arduino -->
-      <article class="card project" data-tags="arduino python embedded sensors ldr smoothing pwm">
-        <div class="project-top">
-          <h3>LDR Smoothing + LED Control — Arduino / Python</h3>
-          <span class="pill">Embedded</span>
+      <article class="pcard" data-tags="arduino python embedded sensors ldr smoothing pwm"
+        data-title="LDR Smoothing + LED Control — Arduino / Python"
+        data-category="Embedded"
+        data-date="2024"
+        data-summary="Built a sensor pipeline that reads LDR light values, applies a moving-average filter to reduce noise, and maps the result to LED brightness via PWM."
+        data-highlights='["Implemented a moving-average filter in Python to smooth noisy LDR sensor readings","Mapped filtered light values to PWM output to control LED brightness dynamically","Tuned sampling rate and threshold values for reliable performance under real-world lighting conditions"]'
+        data-tools='["Arduino","Python","PWM","Sensor Filtering","Serial Communication"]'
+        data-images='[]'>
+        <div class="pcard-left">
+          <span class="pcard-date">2024</span>
+          <span class="pcard-category">Embedded</span>
         </div>
-        <p>Built a small sensor pipeline that reads LDR light values, applies a moving-average filter to reduce noise, and maps the result to LED brightness (PWM). Tuned sampling and thresholds for real-world lighting changes.</p>
-        <ul class="bullets">
-          <li><strong>Tools:</strong> Arduino, Python</li>
-          <li><strong>Focus:</strong> filtering, sampling time, thresholding</li>
-        </ul>
+        <div class="pcard-body">
+          <h3 class="pcard-title">LDR Smoothing + LED Control — Arduino / Python</h3>
+          <p class="pcard-summary">Built a sensor pipeline that reads LDR light values, applies a moving-average filter to reduce noise, and maps the result to LED brightness via PWM.</p>
+          <div class="pcard-tags">
+            <span class="ptag">Arduino</span>
+            <span class="ptag">Python</span>
+            <span class="ptag">Embedded</span>
+          </div>
+          <button class="pcard-btn" type="button">View details <span class="pcard-arrow">——</span></button>
+        </div>
       </article>
 
       <!-- Dog Leash -->
-      <article class="card project" data-tags="design human-centered dog leash forearm elderly accessibility mechanism">
-        <div class="project-top">
-          <h3>Real World Design Project — Forearm Dog Leash</h3>
-          <span class="pill">Design</span>
+      <article class="pcard" data-tags="design human-centered dog leash forearm elderly accessibility mechanism"
+        data-title="Real World Design Project — Forearm Dog Leash"
+        data-category="Design"
+        data-date="2024 — 2025"
+        data-summary="Designed a forearm-mounted dog leash for elderly users with weakened grip strength, distributing leash tension across the forearm to reduce hand strain."
+        data-highlights='["Designed a forearm brace that transfers leash tension from the hand to the forearm, reducing grip force required","Integrated a seatbelt-style locking mechanism that automatically arrests the leash if the dog pulls suddenly","Conducted user research focused on elderly accessibility and iteratively refined the design based on feedback"]'
+        data-tools='["CAD","Engineering Design Process","Human-Centered Design","Prototyping"]'
+        data-images='["images/leash-1.png","images/leash-2.png"]'>
+        <div class="pcard-left">
+          <span class="pcard-date">2024 — 2025</span>
+          <span class="pcard-category">Design</span>
         </div>
-        <p>Designed a forearm-mounted dog leash aimed at elderly users with weakened grip strength. The device distributes leash tension across the forearm rather than the hand, significantly reducing the force required to hold the lead.</p>
-        <div class="img-grid">
-          <button class="img-btn" type="button"><img src="images/leash-1.png" alt="Forearm leash design view 1" loading="lazy" /></button>
-          <button class="img-btn" type="button"><img src="images/leash-2.png" alt="Forearm leash design view 2" loading="lazy" /></button>
+        <div class="pcard-body">
+          <h3 class="pcard-title">Real World Design Project — Forearm Dog Leash</h3>
+          <p class="pcard-summary">Designed a forearm-mounted dog leash for elderly users with weakened grip strength, distributing leash tension across the forearm to reduce hand strain.</p>
+          <div class="pcard-tags">
+            <span class="ptag">Human-Centered Design</span>
+            <span class="ptag">CAD</span>
+            <span class="ptag">Accessibility</span>
+          </div>
+          <button class="pcard-btn" type="button">View details <span class="pcard-arrow">——</span></button>
         </div>
-        <ul class="bullets">
-          <li><strong>Key Features:</strong> Integrated seatbelt-style locking mechanism that arrests sudden tension if the dog pulls; forearm brace that offloads grip force from the hand to the arm</li>
-          <li><strong>Focus:</strong> human-centered design, accessibility, safety, iterative prototyping</li>
-          <li><strong>Tools:</strong> CAD, Engineering Design Process</li>
-        </ul>
       </article>
 
       <!-- Sustainability -->
-      <article class="card project" data-tags="design sustainability systems modeling ferrofluid microplastics lca">
-        <div class="project-top">
-          <h3>Ferrofluid-Based Microplastic Removal System — Sustainable Engineering Design</h3>
-          <span class="pill">Design</span>
+      <article class="pcard" data-tags="design sustainability systems modeling ferrofluid microplastics lca"
+        data-title="Ferrofluid-Based Microplastic Removal System"
+        data-category="Design"
+        data-date="2024 — 2025"
+        data-summary="A team-based project developing a scalable ferrofluid-assisted separation system to remove microplastics from freshwater bodies."
+        data-highlights='["Developed a ferrofluid-assisted separation concept for removing microplastics from freshwater at scale","Evaluated system sustainability using Life Cycle Analysis (LCA) and a structured decision matrix","Modeled system-level interactions and assessed large-scale implementation feasibility"]'
+        data-tools='["Systems Modeling","Life Cycle Analysis (LCA)","Decision Matrix","Sustainable Design"]'
+        data-images='["images/sustain-1.png","images/sustain-2.png"]'>
+        <div class="pcard-left">
+          <span class="pcard-date">2024 — 2025</span>
+          <span class="pcard-category">Design</span>
         </div>
-        <p>A team-based engineering design project focused on developing a scalable ferrofluid-assisted separation system to remove microplastics from freshwater bodies. Emphasis on systems modeling, sustainability evaluation, and large-scale implementation feasibility.</p>
-        <div class="img-grid">
-          <button class="img-btn" type="button"><img src="images/sustain-1.png" alt="Ferrofluid system diagram" loading="lazy" /></button>
-          <button class="img-btn" type="button"><img src="images/sustain-2.png" alt="Ferrofluid process flow" loading="lazy" /></button>
+        <div class="pcard-body">
+          <h3 class="pcard-title">Ferrofluid-Based Microplastic Removal System</h3>
+          <p class="pcard-summary">A team-based project developing a scalable ferrofluid-assisted separation system to remove microplastics from freshwater bodies.</p>
+          <div class="pcard-tags">
+            <span class="ptag">Sustainability</span>
+            <span class="ptag">Systems Modeling</span>
+            <span class="ptag">LCA</span>
+          </div>
+          <button class="pcard-btn" type="button">View details <span class="pcard-arrow">——</span></button>
         </div>
-        <ul class="bullets">
-          <li><strong>Tools:</strong> Systems Modeling, Life Cycle Analysis (LCA), Decision Matrix</li>
-          <li><strong>Focus:</strong> sustainability assessment, systems thinking, scalable implementation</li>
-        </ul>
       </article>
 
     </div>
   </div>
 </section>
 
+<!-- ── PROJECT DETAIL MODAL ───────────────────────────── -->
+<div class="pmodal" id="pModal" aria-hidden="true">
+  <div class="pmodal-backdrop" id="pModalBackdrop"></div>
+  <div class="pmodal-panel">
+    <button class="pmodal-close" id="pModalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="pmodal-content" id="pModalContent"></div>
+  </div>
+</div>
+
 <!-- ── SKILLS ──────────────────────────────────────────── -->
 <section class="section" id="skills">
   <div class="container">
     <h2>Skills &amp; Interests</h2>
-
     <div class="grid-2">
       <div class="card pills-card">
         <h3>CAD &amp; Hardware</h3>
@@ -248,7 +276,6 @@
           <span class="pillchip">Engineering Fundamentals</span>
         </div>
       </div>
-
       <div class="card pills-card">
         <h3>Programming</h3>
         <div class="pill-wrap">
@@ -259,9 +286,7 @@
         </div>
       </div>
     </div>
-
     <div style="height:14px;"></div>
-
     <div class="grid-2">
       <div class="card pills-card">
         <h3>Soft Skills</h3>
@@ -274,7 +299,6 @@
           <span class="pillchip">Fast Learner</span>
         </div>
       </div>
-
       <div class="card pills-card">
         <h3>Interests</h3>
         <div class="pill-wrap">
@@ -287,7 +311,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -296,7 +319,6 @@
   <div class="container">
     <h2>Certificates</h2>
     <p class="muted" style="margin-bottom: 18px;">Certifications and online courses — coming soon.</p>
-
     <div class="grid-2">
       <div class="card" style="opacity: 0.45; min-height: 90px; display: flex; align-items: center; justify-content: center;">
         <span class="muted" style="font-size: 14px;">Certificate placeholder</span>
@@ -312,7 +334,6 @@
 <section class="section" id="contact">
   <div class="container">
     <h2>Contact</h2>
-
     <div class="contact-grid">
       <a class="contact-card" href="mailto:ashhabfarooq@gmail.com">
         <div class="contact-icon" aria-hidden="true">
@@ -324,7 +345,6 @@
         </div>
         <div class="contact-arrow" aria-hidden="true">↗</div>
       </a>
-
       <a class="contact-card" href="tel:+1XXXXXXXXXX">
         <div class="contact-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none"><path d="M7 3.8h3l1.2 4-2 1.2c1.1 2.4 3 4.3 5.4 5.4l1.2-2 4 1.2v3c0 .9-.7 1.6-1.6 1.6-9.2 0-16.6-7.4-16.6-16.6 0-.9.7-1.6 1.6-1.6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -335,7 +355,6 @@
         </div>
         <div class="contact-arrow" aria-hidden="true">↗</div>
       </a>
-
       <a class="contact-card" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener">
         <div class="contact-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.69-3.79-1.34-3.79-1.34-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.64-.73 2.04-1.06.1-.73.39-1.24.71-1.52-2.5-.28-5.14-1.25-5.14-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.1 1.16.9-.25 1.87-.38 2.84-.39.97 0 1.94.13 2.84.39 2.15-1.46 3.1-1.16 3.1-1.16.61 1.54.23 2.68.11 2.96.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.2.64.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
@@ -346,7 +365,6 @@
         </div>
         <div class="contact-arrow" aria-hidden="true">↗</div>
       </a>
-
       <div class="contact-card static">
         <div class="contact-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-6-5.4-6-10a6 6 0 1 1 12 0c0 4.6-6 10-6 10Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
@@ -374,7 +392,6 @@
     <button class="modal-close" id="modalClose" aria-label="Close">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
-
     <div class="modal-img-wrap">
       <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous image">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
@@ -384,7 +401,6 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </button>
     </div>
-
     <div class="modal-footer">
       <p id="modalCaption" class="modal-caption"></p>
       <span id="modalCounter" class="modal-counter"></span>
@@ -394,30 +410,72 @@
 
 <!-- ── SCRIPTS ────────────────────────────────────────── -->
 <script>
-  // Footer year
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // ── Project search ──────────────────────────────────
   const searchInput = document.getElementById('projectSearch');
   const searchHint  = document.getElementById('searchHint');
-  const projects    = document.querySelectorAll('#projectGrid .project');
 
   searchInput.addEventListener('input', () => {
     const q = searchInput.value.trim().toLowerCase();
     let visible = 0;
-    projects.forEach(p => {
-      const tags = p.dataset.tags || '';
-      const text = p.textContent.toLowerCase();
-      const show = !q || tags.includes(q) || text.includes(q);
+    document.querySelectorAll('#projectGrid .pcard').forEach(p => {
+      const show = !q || (p.dataset.tags || '').includes(q) || p.textContent.toLowerCase().includes(q);
       p.style.display = show ? '' : 'none';
       if (show) visible++;
     });
-    searchHint.textContent = q
-      ? `Showing ${visible} project${visible !== 1 ? 's' : ''}`
-      : 'Showing all projects';
+    searchHint.textContent = q ? `Showing ${visible} project${visible !== 1 ? 's' : ''}` : 'Showing all projects';
   });
 
-  // ── Image modal ─────────────────────────────────────
+  // ── Project detail modal ─────────────────────────────
+  const pModal         = document.getElementById('pModal');
+  const pModalContent  = document.getElementById('pModalContent');
+  const pModalClose    = document.getElementById('pModalClose');
+  const pModalBackdrop = document.getElementById('pModalBackdrop');
+
+  function openPModal(card) {
+    const title      = card.dataset.title;
+    const category   = card.dataset.category;
+    const date       = card.dataset.date;
+    const summary    = card.dataset.summary;
+    const highlights = JSON.parse(card.dataset.highlights || '[]');
+    const tools      = JSON.parse(card.dataset.tools || '[]');
+    const images     = JSON.parse(card.dataset.images || '[]');
+
+    const imageHTML = images.length
+      ? `<div class="pmodal-imgs">${images.map(src => `<img src="${src}" alt="" loading="lazy" />`).join('')}</div>`
+      : '';
+
+    pModalContent.innerHTML = `
+      <div class="pmodal-meta">
+        <span class="pmodal-date">${date}</span>
+        <span class="pmodal-cat">${category}</span>
+      </div>
+      <h2 class="pmodal-title">${title}</h2>
+      <p class="pmodal-summary">${summary}</p>
+      ${imageHTML}
+      <div class="pmodal-section-label">HIGHLIGHTS</div>
+      <ul class="pmodal-highlights">${highlights.map(h => `<li>${h}</li>`).join('')}</ul>
+      <div class="pmodal-section-label">TOOLS &amp; METHODS</div>
+      <div class="pmodal-tool-row">${tools.map(t => `<span class="ptag">${t}</span>`).join('')}</div>
+    `;
+
+    pModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('no-scroll');
+  }
+
+  function closePModal() {
+    pModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('no-scroll');
+  }
+
+  document.querySelectorAll('.pcard-btn').forEach(btn => {
+    btn.addEventListener('click', () => openPModal(btn.closest('.pcard')));
+  });
+  pModalClose.addEventListener('click', closePModal);
+  pModalBackdrop.addEventListener('click', closePModal);
+
+  // ── Image modal (for images inside project detail) ───
   const modal      = document.getElementById('imgModal');
   const modalImg   = document.getElementById('modalImg');
   const modalCap   = document.getElementById('modalCaption');
@@ -427,67 +485,58 @@
   const modalNext  = document.getElementById('modalNext');
   const backdrop   = document.getElementById('modalBackdrop');
 
-  let currentImgs = [];
-  let currentIdx  = 0;
+  let currentImgs = [], currentIdx = 0;
 
-  function openModal(imgs, idx) {
-    currentImgs = imgs;
-    currentIdx  = idx;
+  function openImgModal(imgs, idx) {
+    currentImgs = imgs; currentIdx = idx;
     showSlide();
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('no-scroll');
   }
 
-  function closeModal() {
+  function closeImgModal() {
     modal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('no-scroll');
     modalImg.src = '';
   }
 
   function showSlide() {
-    const btn = currentImgs[currentIdx];
-    const img = btn.querySelector('img');
-    modalImg.src = img.src;
-    modalImg.alt = img.alt;
-    modalCap.textContent = img.alt;
+    modalImg.src = currentImgs[currentIdx].src;
+    modalImg.alt = currentImgs[currentIdx].alt;
+    modalCap.textContent = currentImgs[currentIdx].alt;
     modalCtr.textContent = `${currentIdx + 1} / ${currentImgs.length}`;
     modalPrev.style.display = currentImgs.length > 1 ? '' : 'none';
     modalNext.style.display = currentImgs.length > 1 ? '' : 'none';
   }
 
-  document.querySelectorAll('.img-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const card = btn.closest('.project');
-      const imgs = [...card.querySelectorAll('.img-btn')];
-      openModal(imgs, imgs.indexOf(btn));
-    });
+  pModalContent.addEventListener('click', e => {
+    const img = e.target.closest('.pmodal-imgs img');
+    if (!img) return;
+    const imgs = [...pModalContent.querySelectorAll('.pmodal-imgs img')];
+    openImgModal(imgs, imgs.indexOf(img));
   });
 
-  modalClose.addEventListener('click', closeModal);
-  backdrop.addEventListener('click', closeModal);
+  modalClose.addEventListener('click', closeImgModal);
+  backdrop.addEventListener('click', closeImgModal);
   modalPrev.addEventListener('click', () => { currentIdx = (currentIdx - 1 + currentImgs.length) % currentImgs.length; showSlide(); });
   modalNext.addEventListener('click', () => { currentIdx = (currentIdx + 1) % currentImgs.length; showSlide(); });
 
   document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { closePModal(); closeImgModal(); }
     if (modal.getAttribute('aria-hidden') === 'true') return;
-    if (e.key === 'Escape')     closeModal();
     if (e.key === 'ArrowLeft')  { currentIdx = (currentIdx - 1 + currentImgs.length) % currentImgs.length; showSlide(); }
     if (e.key === 'ArrowRight') { currentIdx = (currentIdx + 1) % currentImgs.length; showSlide(); }
   });
 
   // ── Active nav on scroll ─────────────────────────────
   const navLinks = document.querySelectorAll('.nav-links a');
-  const sections = document.querySelectorAll('section[id], footer');
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const id = entry.target.id;
         navLinks.forEach(link => {
           link.classList.remove('nav-active');
-          if (link.getAttribute('href') === `#${id}`) {
-            link.classList.add('nav-active');
-          }
+          if (link.getAttribute('href') === `#${id}`) link.classList.add('nav-active');
         });
       }
     });
