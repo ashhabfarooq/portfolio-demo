@@ -580,3 +580,229 @@ h1, h2, h3 {
   .topbar-actions { gap: 4px; }
   .hdr-btn { padding: 7px 9px; font-size: 12px; }
 }
+
+/* ── Project list (new card style) ────────────────────── */
+.project-list { display: flex; flex-direction: column; gap: 0; }
+
+.pcard {
+  display: flex;
+  gap: 28px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  cursor: default;
+  transition: background .15s;
+}
+.pcard:first-child { border-top: 1px solid var(--line); }
+
+.pcard-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 110px;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+
+.pcard-date {
+  font-size: 13px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.pcard-category {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(100,140,200,.10);
+  border: 1px solid rgba(100,140,200,.22);
+  color: #1a2a4a;
+  width: fit-content;
+}
+
+.pcard-body { flex: 1; min-width: 0; }
+
+.pcard-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 8px;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.pcard-summary {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+.pcard-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+
+.ptag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(26,24,20,.04);
+  color: var(--muted);
+}
+
+.pcard-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accentSolid);
+  cursor: pointer;
+  transition: gap .2s, color .15s;
+  font-family: inherit;
+}
+.pcard-btn:hover { gap: 14px; color: #4a6fa8; }
+.pcard-arrow { font-size: 12px; opacity: .7; }
+
+/* ── Project detail modal ──────────────────────────────── */
+.pmodal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+.pmodal[aria-hidden="false"] {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pmodal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,16,.50);
+  backdrop-filter: blur(4px);
+}
+
+.pmodal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(520px, 92vw);
+  height: 100vh;
+  background: var(--panelSolid);
+  box-shadow: -20px 0 60px rgba(0,0,0,.15);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pmodal-close {
+  position: sticky;
+  top: 0;
+  align-self: flex-end;
+  margin: 16px 16px 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--panelSolid);
+  color: var(--text);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background .15s;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.pmodal-close:hover { background: var(--btn); }
+.pmodal-close svg { width: 15px; height: 15px; }
+
+.pmodal-content { padding: 8px 32px 40px; }
+
+.pmodal-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.pmodal-date {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accentSolid);
+}
+
+.pmodal-cat {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(100,140,200,.10);
+  border: 1px solid rgba(100,140,200,.22);
+  color: #1a2a4a;
+}
+
+.pmodal-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+
+.pmodal-summary {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.pmodal-imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.pmodal-imgs img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s;
+}
+.pmodal-imgs img:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+
+.pmodal-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin: 20px 0 10px;
+}
+
+.pmodal-highlights {
+  margin: 0 0 8px;
+  padding-left: 18px;
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 14px;
+}
+.pmodal-highlights li { margin-bottom: 6px; }
+
+.pmodal-tool-row { display: flex; flex-wrap: wrap; gap: 8px; }
+
+@media (max-width: 600px) {
+  .pcard { flex-direction: column; gap: 10px; }
+  .pcard-left { flex-direction: row; align-items: center; min-width: unset; }
+  .pmodal-panel { width: 100vw; }
+  .pmodal-content { padding: 8px 20px 40px; }
+}
