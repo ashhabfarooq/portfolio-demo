@@ -623,14 +623,14 @@ h1, h2, h3 {
 .pcard-category {
   display: inline-block;
   font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .6px;
+  font-weight: 600;
+  letter-spacing: .5px;
   text-transform: uppercase;
   padding: 4px 10px;
-  border-radius: 8px;
-  background: rgba(80,160,130,.10);
-  border: 1.5px solid rgba(80,160,130,.30);
-  color: #2a7a5a;
+  border-radius: 999px;
+  background: rgba(100,140,200,.10);
+  border: 1px solid rgba(100,140,200,.28);
+  color: #1a2a4a;
   width: fit-content;
 }
 
@@ -657,42 +657,44 @@ h1, h2, h3 {
 
 .ptag {
   font-size: 13px;
-  padding: 5px 12px;
-  border-radius: 8px;
-  border: 1px solid rgba(26,24,20,.15);
-  background: #ffffff;
-  color: var(--text);
-  transition: background .15s, border-color .15s, transform .15s;
+  padding: 7px 13px;
+  border-radius: 999px;
+  border: 1px solid rgba(26,24,20,.09);
+  background: rgba(255,255,255,.70);
+  color: rgba(26,24,20,.78);
+  font-weight: 500;
+  transition: background .15s, border-color .15s, transform .15s, box-shadow .15s;
 }
 .ptag:hover {
-  background: rgba(100,140,200,.08);
+  transform: translateY(-2px);
+  background: rgba(100,140,200,.12);
   border-color: rgba(100,140,200,.28);
-  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(80,100,160,.10);
 }
 
 .pcard-divider {
   height: 1px;
   border: none;
-  border-top: 1.5px dashed rgba(26,24,20,.13);
+  border-top: 1px solid var(--line);
   margin: 16px 0 14px;
 }
 
 .pcard-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   background: none;
   border: none;
   padding: 0;
   font-size: 14px;
   font-weight: 600;
-  color: #2a7a5a;
+  color: var(--accentSolid);
   cursor: pointer;
-  transition: gap .2s, color .15s;
+  transition: color .15s, gap .2s;
   font-family: inherit;
 }
-.pcard-btn:hover { gap: 14px; color: #1a5a40; }
-.pcard-arrow { font-size: 12px; opacity: .7; }
+.pcard-btn:hover { color: #4a6fa8; gap: 10px; }
+.pcard-arrow { display: none; }
 
 /* ── Project detail modal ──────────────────────────────── */
 .pmodal {
