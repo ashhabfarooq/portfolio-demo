@@ -474,6 +474,26 @@
     if (e.key === 'ArrowLeft')  { currentIdx = (currentIdx - 1 + currentImgs.length) % currentImgs.length; showSlide(); }
     if (e.key === 'ArrowRight') { currentIdx = (currentIdx + 1) % currentImgs.length; showSlide(); }
   });
+
+  // ── Active nav on scroll ─────────────────────────────
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = document.querySelectorAll('section[id], footer');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach(link => {
+          link.classList.remove('nav-active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('nav-active');
+          }
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
 </script>
 
 </body>
