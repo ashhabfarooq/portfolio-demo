@@ -1,21 +1,46 @@
-<!-- Logo: name only -->
-  <a class="logo" href="#top">
-    <div class="logo-info">
-      <span class="logo-name">Ashhab Farooq</span>
-      <span class="logo-sub">Computer Engineering · UBCO</span>
-    </div>
-  </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashhab Farooq — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
 
-  <nav class="nav-links" aria-label="Primary">
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- ── TOPBAR ─────────────────────────────────────────── -->
+<header class="topbar">
+  <div class="container topbar-inner">
 
+    <a class="logo" href="#top">
+      <div class="logo-info">
+        <span class="logo-name">Ashhab Farooq</span>
+        <span class="logo-sub">Computer Engineering · UBCO</span>
+      </div>
+    </a>
 
-</div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ── HERO ───────────────────────────────────────────── -->
+<section class="section hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <div class="hero-text">
+        <h1>Ashhab Farooq</h1>
+        <p class="tagline">
+          Computer Engineering student at UBCO. I build things that sit at the intersection
+          of hardware and software — CAD models, embedded systems, and engineering design.
+        </p>
 
         <div class="buttons">
           <a class="hero-icon-btn" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener" aria-label="GitHub">
@@ -35,22 +60,24 @@
       <div class="hero-photo-wrap">
         <img class="hero-photo" src="images/profile.jpg" alt="Photo of Ashhab Farooq" />
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ── ABOUT ──────────────────────────────────────────── -->
 <section class="section" id="about">
   <div class="container">
     <h2>About</h2>
     <p>
       I'm a first-year Applied Science student working toward Computer Engineering. I enjoy projects that combine
-      design and problem-solving—especially CAD modeling and beginner embedded systems work. I'm developing my skills
+      design and problem-solving — especially CAD modeling and beginner embedded systems work. I'm developing my skills
       in SolidWorks, Python, Arduino, Java, and C++, and I focus on documenting my work clearly and improving through iteration.
     </p>
   </div>
 </section>
 
+<!-- ── EDUCATION ──────────────────────────────────────── -->
 <section class="section" id="education">
   <div class="container">
     <h2>Academic Background</h2>
@@ -61,7 +88,6 @@
           <div class="edu-card2-title">BASc — Applied Science (1st Year)</div>
           <div class="edu-card2-sub">University of British Columbia Okanagan (UBCO)</div>
         </div>
-
         <div class="edu-card2-meta">
           <div class="edu-meta-row"><span>2025 — 2029</span></div>
           <div class="edu-meta-row"><span>Kelowna, BC</span></div>
@@ -77,7 +103,7 @@
 
       <div class="chips edu-chips">
         <span class="chip">Python / Programming</span>
-        <span class="chip">Calculus I & II</span>
+        <span class="chip">Calculus I &amp; II</span>
         <span class="chip">Engineering Chemistry</span>
         <span class="chip">Engineering Design</span>
         <span class="chip">Linear Algebra</span>
@@ -91,39 +117,39 @@
 
     <div class="ach-grid">
       <div class="ach-card">
-        <div class="ach-head">
-          <h3>Scholarships</h3>
-        </div>
+        <div class="ach-head"><h3>Scholarships</h3></div>
         <div class="ach-rule"></div>
-
         <ul class="ach-list">
-          <li><strong>International Major Entrance Scholarship (IMES)</strong><br><span class="muted">Renewable merit-based scholarship awarded for academic excellence</span></li>
-          <li style="margin-top:10px;"><strong>Outstanding International Student (OIS)</strong><br><span class="muted">Merit-based scholarship awarded for exceptional academic standing</span></li>
+          <li>
+            <strong>International Major Entrance Scholarship (IMES)</strong><br>
+            <span class="muted">Renewable merit-based scholarship awarded for academic excellence</span>
+          </li>
+          <li style="margin-top:10px;">
+            <strong>Outstanding International Student (OIS)</strong><br>
+            <span class="muted">Merit-based scholarship awarded for exceptional academic standing</span>
+          </li>
         </ul>
       </div>
 
       <div class="ach-card">
-        <div class="ach-head">
-          <h3>Test Scores</h3>
-        </div>
+        <div class="ach-head"><h3>Test Scores</h3></div>
         <div class="ach-rule"></div>
-
         <div class="ach-block">
           <div class="ach-row">
             <strong>IELTS: 8.0</strong>
             <span class="pill subtle">Overall</span>
           </div>
-
           <div class="ach-mini muted" style="margin-top:8px;">
-            Listening: 8.5, Reading: 8.5, Speaking: 8.0, Writing: 7.5
+            Listening: 8.5 &nbsp;·&nbsp; Reading: 8.5 &nbsp;·&nbsp; Speaking: 8.0 &nbsp;·&nbsp; Writing: 7.5
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- ── PROJECTS ────────────────────────────────────────── -->
 <section class="section" id="projects">
   <div class="container">
     <div class="section-head">
@@ -138,6 +164,7 @@
 
     <div class="project-grid" id="projectGrid">
 
+      <!-- Harley -->
       <article class="card project" data-tags="cad solidworks harley wla modeling assemblies">
         <div class="project-top">
           <h3>Harley-Davidson WLA (1942) — SolidWorks Model</h3>
@@ -155,6 +182,7 @@
         </ul>
       </article>
 
+      <!-- Arduino -->
       <article class="card project" data-tags="arduino python embedded sensors ldr smoothing pwm">
         <div class="project-top">
           <h3>LDR Smoothing + LED Control — Arduino / Python</h3>
@@ -171,6 +199,7 @@
         </ul>
       </article>
 
+      <!-- Sustainability -->
       <article class="card project" data-tags="design sustainability systems modeling ferrofluid microplastics lca">
         <div class="project-top">
           <h3>Ferrofluid-Based Microplastic Removal System — Sustainable Engineering Design</h3>
@@ -185,15 +214,13 @@
       </article>
 
     </div>
-
-    <p class="note"></p>
   </div>
 </section>
 
-<!-- SKILLS + INTERESTS -->
+<!-- ── SKILLS ──────────────────────────────────────────── -->
 <section class="section" id="skills">
   <div class="container">
-    <h2>Skills & Interests</h2>
+    <h2>Skills &amp; Interests</h2>
 
     <div class="grid-2">
       <div class="card pills-card">
@@ -238,7 +265,7 @@
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ── CONTACT ────────────────────────────────────────── -->
 <section class="section" id="contact">
   <div class="container">
     <h2>Contact</h2>
@@ -246,7 +273,7 @@
     <div class="contact-grid">
       <a class="contact-card" href="mailto:ashhabfarooq@gmail.com">
         <div class="contact-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.8" /><path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
         </div>
         <div class="contact-text">
           <div class="contact-label">Email</div>
@@ -257,7 +284,7 @@
 
       <a class="contact-card" href="tel:+1XXXXXXXXXX">
         <div class="contact-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M7 3.8h3l1.2 4-2 1.2c1.1 2.4 3 4.3 5.4 5.4l1.2-2 4 1.2v3c0 .9-.7 1.6-1.6 1.6-9.2 0-16.6-7.4-16.6-16.6 0-.9.7-1.6 1.6-1.6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M7 3.8h3l1.2 4-2 1.2c1.1 2.4 3 4.3 5.4 5.4l1.2-2 4 1.2v3c0 .9-.7 1.6-1.6 1.6-9.2 0-16.6-7.4-16.6-16.6 0-.9.7-1.6 1.6-1.6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <div class="contact-text">
           <div class="contact-label">Phone</div>
@@ -287,34 +314,124 @@
         </div>
       </div>
     </div>
-
-    <p class="note"></p>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ── FOOTER ─────────────────────────────────────────── -->
 <footer class="footer">
   <div class="container">
     <p>© <span id="year"></span> Ashhab Farooq</p>
   </div>
 </footer>
 
-  <div class="modal-img-wrap">
-    <!-- Prev button -->
-    <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous image">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+<!-- ── IMAGE MODAL ────────────────────────────────────── -->
+<div class="modal" id="imgModal" aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-panel">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
 
-    <img id="modalImg" src="" alt="" />
+    <div class="modal-img-wrap">
+      <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <img id="modalImg" src="" alt="" />
+      <button class="modal-nav modal-next" id="modalNext" aria-label="Next image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
 
-    <!-- Next button -->
-    <button class="modal-nav modal-next" id="modalNext" aria-label="Next image">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-    </button>
-  </div>
-
-  <div class="modal-footer">
-    <p id="modalCaption" class="modal-caption"></p>
-    <span id="modalCounter" class="modal-counter"></span>
+    <div class="modal-footer">
+      <p id="modalCaption" class="modal-caption"></p>
+      <span id="modalCounter" class="modal-counter"></span>
+    </div>
   </div>
 </div>
+
+<!-- ── SCRIPTS ────────────────────────────────────────── -->
+<script>
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ── Project search ──────────────────────────────────
+  const searchInput = document.getElementById('projectSearch');
+  const searchHint  = document.getElementById('searchHint');
+  const projects    = document.querySelectorAll('#projectGrid .project');
+
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.trim().toLowerCase();
+    let visible = 0;
+    projects.forEach(p => {
+      const tags = p.dataset.tags || '';
+      const text = p.textContent.toLowerCase();
+      const show = !q || tags.includes(q) || text.includes(q);
+      p.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    searchHint.textContent = q
+      ? `Showing ${visible} project${visible !== 1 ? 's' : ''}`
+      : 'Showing all projects';
+  });
+
+  // ── Image modal ─────────────────────────────────────
+  const modal      = document.getElementById('imgModal');
+  const modalImg   = document.getElementById('modalImg');
+  const modalCap   = document.getElementById('modalCaption');
+  const modalCtr   = document.getElementById('modalCounter');
+  const modalClose = document.getElementById('modalClose');
+  const modalPrev  = document.getElementById('modalPrev');
+  const modalNext  = document.getElementById('modalNext');
+  const backdrop   = document.getElementById('modalBackdrop');
+
+  let currentImgs = [];
+  let currentIdx  = 0;
+
+  function openModal(imgs, idx) {
+    currentImgs = imgs;
+    currentIdx  = idx;
+    showSlide();
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('no-scroll');
+  }
+
+  function closeModal() {
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('no-scroll');
+    modalImg.src = '';
+  }
+
+  function showSlide() {
+    const btn = currentImgs[currentIdx];
+    const img = btn.querySelector('img');
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+    modalCap.textContent = img.alt;
+    modalCtr.textContent = `${currentIdx + 1} / ${currentImgs.length}`;
+    modalPrev.style.display = currentImgs.length > 1 ? '' : 'none';
+    modalNext.style.display = currentImgs.length > 1 ? '' : 'none';
+  }
+
+  document.querySelectorAll('.img-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.project');
+      const imgs = [...card.querySelectorAll('.img-btn')];
+      openModal(imgs, imgs.indexOf(btn));
+    });
+  });
+
+  modalClose.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', closeModal);
+  modalPrev.addEventListener('click', () => { currentIdx = (currentIdx - 1 + currentImgs.length) % currentImgs.length; showSlide(); });
+  modalNext.addEventListener('click', () => { currentIdx = (currentIdx + 1) % currentImgs.length; showSlide(); });
+
+  document.addEventListener('keydown', e => {
+    if (modal.getAttribute('aria-hidden') === 'true') return;
+    if (e.key === 'Escape')     closeModal();
+    if (e.key === 'ArrowLeft')  { currentIdx = (currentIdx - 1 + currentImgs.length) % currentImgs.length; showSlide(); }
+    if (e.key === 'ArrowRight') { currentIdx = (currentIdx + 1) % currentImgs.length; showSlide(); }
+  });
+</script>
+
+</body>
+</html>
