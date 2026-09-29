@@ -28,44 +28,53 @@
   </div>
 </header>
 
-<!-- ── HERO ───────────────────────────────────────────── -->
-<section class="section hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <h1 class="hero-reveal" style="--d:0ms">Ashhab Farooq</h1>
-        <p class="tagline hero-reveal" style="--d:120ms">
-          Computer Engineering student at UBCO. I build things that sit at the intersection
-          of hardware and software — CAD models, embedded systems, and engineering design.
-        </p>
-        <div class="buttons hero-reveal" style="--d:240ms">
-          <a class="hero-icon-btn" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener" aria-label="GitHub">
+<!-- ── LANDING ────────────────────────────────────────── -->
+<section class="landing" id="home">
+  <div class="landing-inner">
+    <h1 class="landing-name" id="landingName">Ashhab Farooq</h1>
+    <div class="landing-fade">
+      <div class="landing-line"></div>
+      <p class="landing-sub">Computer Engineering · UBCO</p>
+      <p class="landing-tagline">
+        I build things that sit at the intersection of hardware and software —
+        CAD models, embedded systems, and engineering design.
+      </p>
+      <div class="buttons landing-buttons">
+        <a class="hero-icon-btn" href="https://github.com/ashhabfarooq" target="_blank" rel="noopener" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.69-3.79-1.34-3.79-1.34-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.64-.73 2.04-1.06.1-.73.39-1.24.71-1.52-2.5-.28-5.14-1.25-5.14-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.1 1.16.9-.25 1.87-.38 2.84-.39.97 0 1.94.13 2.84.39 2.15-1.46 3.1-1.16 3.1-1.16.61 1.54.23 2.68.11 2.96.72.79 1.16 1.8 1.16 3.03 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.2.64.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
-          </a>
-          <a class="hero-icon-btn" href="https://www.linkedin.com/in/ashhabfarooq" target="_blank" rel="noopener" aria-label="LinkedIn">
+        </a>
+        <a class="hero-icon-btn" href="https://www.linkedin.com/in/ashhabfarooq" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
-          </a>
-          <a class="hero-icon-btn" href="resume.pdf" target="_blank" rel="noopener" aria-label="Download Resume">
+        </a>
+        <a class="hero-icon-btn" href="resume.pdf" target="_blank" rel="noopener" aria-label="Download Resume">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="hero-photo-wrap hero-reveal" style="--d:180ms">
-        <img class="hero-photo" src="images/profile.jpg" alt="Photo of Ashhab Farooq" />
+        </a>
       </div>
     </div>
   </div>
+  <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </a>
 </section>
+
+<!-- Copy of the name that shrinks into the navbar as you scroll (visual only) -->
+<div class="fly-name" id="flyName" aria-hidden="true">Ashhab Farooq</div>
 
 <!-- ── ABOUT ──────────────────────────────────────────── -->
 <section class="section" id="about">
   <div class="container reveal">
-    <h2>About</h2>
-    <p>
-      I'm a second-year Computer Engineering student at UBCO. I enjoy projects that combine
-      design and problem-solving — especially CAD modeling and embedded systems work. I'm developing my skills
-      in SolidWorks, Python, Arduino, Java, and C++, and I focus on documenting my work clearly and improving through iteration.
-    </p>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>About</h2>
+        <p>
+          I'm a second-year Computer Engineering student at UBCO. I enjoy projects that combine
+          design and problem-solving — especially CAD modeling and embedded systems work. I'm developing my skills
+          in SolidWorks, Python, Arduino, Java, and C++, and I focus on documenting my work clearly and improving through iteration.
+        </p>
+      </div>
+      <img class="about-photo" src="images/profile.jpg" alt="Photo of Ashhab Farooq" />
+    </div>
   </div>
 </section>
 
@@ -532,30 +541,8 @@
 
   document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
 
-  // ── Intro + page reveal ──────────────────────────────
+  // ── Scroll-in reveal for sections ────────────────────
   (function () {
-    const root  = document.documentElement;
-    const intro = document.getElementById('intro');
-    const showPage = () => root.classList.add('loaded');
-
-    if (root.classList.contains('show-intro')) {
-      let done = false;
-      const endIntro = () => {
-        if (done) return;
-        done = true;
-        try { sessionStorage.setItem('introSeen', '1'); } catch (e) {}
-        intro.classList.add('intro-exit');
-        setTimeout(showPage, 150);
-        setTimeout(() => root.classList.remove('show-intro'), 700);
-      };
-      setTimeout(endIntro, 1500);                       // auto-finish
-      intro.addEventListener('click', endIntro);        // click to skip
-      document.addEventListener('keydown', endIntro, { once: true }); // any key to skip
-    } else {
-      requestAnimationFrame(() => requestAnimationFrame(showPage));
-    }
-
-    // Fade sections in as they scroll into view
     const revealEls = document.querySelectorAll('.reveal');
     if (!('IntersectionObserver' in window)) {
       revealEls.forEach(el => el.classList.add('in-view'));
@@ -570,6 +557,72 @@
       });
     }, { threshold: 0.05, rootMargin: '0px 0px -8% 0px' });
     revealEls.forEach(el => revealObs.observe(el));
+  })();
+
+  // ── Landing: name shrinks into the navbar on scroll ──
+  (function () {
+    const root = document.documentElement;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; // static fallback
+    root.classList.add('fly');
+
+    const fly     = document.getElementById('flyName');
+    const target  = document.getElementById('landingName');
+    const logo    = document.querySelector('.logo-name');
+    const topbar  = document.querySelector('.topbar');
+    const landing = document.getElementById('home');
+    const fade    = document.querySelector('.landing-fade');
+    const cue     = document.querySelector('.scroll-cue');
+
+    const clamp  = (v, a, b) => Math.min(b, Math.max(a, v));
+    const smooth = (a, b, v) => { const t = clamp((v - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
+    const DARK = [26, 24, 20], LIGHT = [245, 244, 241];
+
+    let m = null, ticking = false;
+
+    function measure() {
+      fly.style.transform = 'none';
+      const w = fly.offsetWidth, h = fly.offsetHeight;
+      const a = target.getBoundingClientRect();   // big name on the landing screen
+      const b = logo.getBoundingClientRect();     // small name in the navbar
+      const y = window.scrollY;
+      m = {
+        w, h,
+        s1: parseFloat(getComputedStyle(logo).fontSize) / parseFloat(getComputedStyle(fly).fontSize),
+        x0: a.left,  y0: a.top + y + a.height / 2,
+        x1: b.left,  y1: b.top + b.height / 2,
+        dist: Math.max(1, landing.offsetHeight - topbar.offsetHeight - 10)   // finishes as About reaches the navbar
+      };
+      update();
+      fly.classList.add('ready');
+    }
+
+    function update() {
+      ticking = false;
+      if (!m) return;
+      const p  = clamp(window.scrollY / m.dist, 0, 1);
+      const q  = 1 - (1 - p) * (1 - p);      // ease-out so the name keeps pace with the page
+      const s  = 1 + (m.s1 - 1) * q;
+      const x  = m.x0 + (m.x1 - m.x0) * q;   // left edges line up
+      const cy = m.y0 + (m.y1 - m.y0) * q;
+      fly.style.transform = `translate(${x}px, ${cy - m.h * s / 2}px) scale(${s})`;
+
+      const c = smooth(0.55, 0.95, p);
+      fly.style.color = `rgb(${DARK.map((d, i) => Math.round(d + (LIGHT[i] - d) * c)).join(',')})`;
+
+      topbar.style.opacity = smooth(0.35, 0.9, p);
+      topbar.classList.toggle('bar-on', p > 0.5);
+      fade.style.opacity   = 1 - smooth(0, 0.25, p);
+      fade.style.transform = `translateY(${-40 * p}px)`;
+      cue.style.opacity    = 1 - smooth(0, 0.15, p);
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener('resize', measure);
+    window.addEventListener('load', measure);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+    measure();
   })();
 </script>
 
