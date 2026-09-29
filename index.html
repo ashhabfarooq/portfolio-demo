@@ -5,28 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashhab Farooq — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    // Runs before the page paints: decides whether to show the intro (once per visit, never with reduced motion)
-    (function () {
-      var d = document.documentElement;
-      d.classList.add('js');
-      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var seen = false;
-      try { seen = sessionStorage.getItem('introSeen') === '1'; } catch (e) {}
-      if (!reduce && !seen) d.classList.add('show-intro');
-    })();
-  </script>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body id="top">
-
-<!-- ── INTRO ──────────────────────────────────────────── -->
-<div class="intro" id="intro" aria-hidden="true">
-  <div class="intro-inner">
-    <div class="intro-name">Ashhab Farooq</div>
-    <div class="intro-line"></div>
-    <div class="intro-sub">Computer Engineering · UBCO</div>
-  </div>
-</div>
 
 <!-- ── TOPBAR ─────────────────────────────────────────── -->
 <header class="topbar">
