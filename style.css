@@ -284,21 +284,24 @@ h1, h2, h3 {
   box-shadow: var(--shadowSoft);
   padding: 24px 24px 26px;
   backdrop-filter: blur(8px);
+  overflow: hidden;            /* keeps the accent bar inside the rounded corners */
 }
 .edu-shell::before {
   content: "";
   position: absolute;
-  left: 0; top: 0; bottom: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   width: 4px;
   background: var(--accentSolid);
-  border-radius: 4px 0 0 4px;
+  border-radius: 0;            /* card's overflow does the rounding now */
   opacity: .70;
   z-index: 1;
 }
 .edu-shell::after {
   content: "";
   position: absolute;
-  inset: -2px;
+  inset: 0;
   background:
     radial-gradient(600px 200px at 20% 0%, rgba(100,140,200,.10), transparent 55%),
     radial-gradient(600px 200px at 80% 0%, rgba(180,140,220,.07), transparent 55%);
