@@ -54,6 +54,94 @@ h1, h2, h3 {
 .container { width: min(1100px, 92vw); margin: 0 auto; }
 .section { scroll-margin-top: 94px; }
 
+/* ── Intro screen ──────────────────────────────────────── */
+.intro { display: none; }
+
+html.show-intro body { overflow: hidden; }
+
+html.show-intro .intro {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  cursor: pointer;
+  transition: opacity .55s ease, transform .55s cubic-bezier(.7, 0, .2, 1);
+}
+
+.intro.intro-exit {
+  opacity: 0;
+  transform: translateY(-24px);
+  pointer-events: none;
+}
+
+.intro-inner { text-align: center; }
+
+.intro-name {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(32px, 5vw, 52px);
+  color: var(--text);
+  line-height: 1.1;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: introUp .6s ease forwards .1s;
+}
+
+.intro-line {
+  width: 0;
+  height: 1px;
+  margin: 16px auto 14px;
+  background: var(--accentSolid);
+  animation: introLine .7s cubic-bezier(.6, 0, .2, 1) forwards .45s;
+}
+
+.intro-sub {
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0;
+  transform: translateY(6px);
+  animation: introUp .5s ease forwards .8s;
+}
+
+@keyframes introUp   { to { opacity: 1; transform: none; } }
+@keyframes introLine { to { width: 120px; } }
+
+/* ── Page reveal ───────────────────────────────────────── */
+.js .topbar {
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+.js.loaded .topbar { opacity: 1; }
+
+.js .hero-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
+  transition-delay: var(--d, 0ms);
+}
+.js.loaded .hero-reveal { opacity: 1; transform: none; }
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
+}
+.js .reveal.in-view { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .topbar,
+  .js .hero-reveal,
+  .js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 /* ── Topbar ────────────────────────────────────────────── */
 .topbar {
   position: sticky;
